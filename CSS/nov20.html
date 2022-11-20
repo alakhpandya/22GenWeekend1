@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-box {
+        border: 2px solid maroon;
+        border-radius: 10px;
+        background-color: pink;
+        width: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .form-box input {
+        border-radius: 5px;
+        border: 2px solid maroon;
+    }
+
+    .req::after{
+        content: "*";
+        color: maroon;
+    }
+</style>
+
+<body>
+    <br> <br>
+    <div class="form-box">
+        <br>
+        <form action="">
+            <div>
+                <label for="">Full Name:</label>
+                <input type="text" placeholder="">
+            </div> <br>
+            <div>
+                <label class="req" for="">Email:</label>
+                <input type="email" name="" placeholder="" id="">
+            </div> <br>
+            <div>
+                <label class="req" for="">Password:</label>
+                <input type="password" name="" placeholder="" id="uPwd">
+            </div> <br>
+            <div>
+                <input type="submit" value="Register">
+            </div> <br>
+        </form>
+    </div>
+</body>
+
+</html>

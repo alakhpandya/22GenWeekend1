@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        /* background-color: rgba(0, 255, 255, 0.5); */
+        background-color: cyan;
+        /* text-align: center; */
+        /* text-align: left; */
+        /* text-align: right; */
+        text-align: justify;
+    }
+    p{
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    a{
+        text-decoration: none;
+        position: relative;
+    }
+    /* a:hover{
+        text-decoration: underline;
+    } */
+    a:hover::after{
+        content: attr(data-message);
+        background-color: green;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 100%;
+        left: 30px;
+        white-space: nowrap;
+    }
+</style>
+<body>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, molestiae.</h1> <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a target="_blank" data-message="Like our facebook page" href="#">Assumenda porro</a> aspernatur similique ipsa veritatis sit sed exercitationem est ratione consequatur a dicta, animi ab minima temporibus corporis eligendi corrupti perferendis quae ut dolores, necessitatibus perspiciatis. Dignissimos eos, eveniet non assumenda quaerat veniam quisquam error aut! Cupiditate, soluta atque molestias iure sed sunt tenetur saepe veritatis totam, expedita ex pariatur magni reprehenderit inventore <a data-message="Subscribe to our youtube channel" href="#">consequatur commodi,</a> consequuntur labore voluptas illo consectetur tempore maiores porro sequi debitis? Cumque voluptatum ullam libero eum quo consectetur unde sit, suscipit ratione odio aperiam sequi temporibus amet ab quas beatae eveniet incidunt cupiditate modi exercitationem reprehenderit eaque porro! Dolor fuga, accusamus repellendus cumque eligendi et incidunt repudiandae voluptatem assumenda, ab minima. <a data-message="Follow us on twitter" href="#">Non quidem</a> deserunt suscipit inventore. Quam est odio excepturi eaque unde recusandae architecto reprehenderit? Veniam omnis et veritatis praesentium nesciunt natus asperiores beatae odio excepturi blanditiis debitis corrupti porro eos voluptas consequuntur autem non, tempora voluptatem iste quam libero voluptate eum dolor. Quidem dolores numquam consequuntur corporis excepturi sit soluta illum aliquam assumenda. Modi fugiat voluptate porro nulla deleniti culpa tempore rerum totam voluptatibus deserunt at consequuntur reprehenderit incidunt aliquam iusto, aut cum quam consequatur temporibus numquam minima omnis recusandae dignissimos. Temporibus ex fugiat labore nulla atque officia suscipit repellat deserunt voluptatibus voluptas laboriosam vel consequatur cum quia sit placeat magnam dolores, soluta, ad molestiae non doloribus esse adipisci ipsam. Laudantium eos earum minus, distinctio accusamus commodi omnis voluptates illum tempora itaque et! Libero, nulla? Ut consequatur saepe cum, facilis sapiente expedita molestias quae! Debitis ipsam nemo culpa recusandae, eligendi ullam exercitationem molestias hic dolor fuga sed consectetur ipsum, et totam eum sapiente. Quia animi cum veniam exercitationem sapiente? <a data-message="Connect with us on linked-in" href="#">Officia</a> minus suscipit illum cumque tenetur, rerum autem excepturi quod rem molestiae, ducimus accusamus at facere? Eos, consectetur! Tempore animi iusto quasi a illo suscipit eligendi minus.</p>
+</body>
+</html>
