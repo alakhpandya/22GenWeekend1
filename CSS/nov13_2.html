@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* before-after */
+    body{
+        text-align: center;
+    }
+    h1::before{
+        content: "I";
+        display: block;
+        /* height: 100px; */
+        color: white;
+        background-color: orangered;
+    }
+    h1::after{
+        content: "India";
+        display: block;
+        background-color: green;
+    }
+
+    /* #I{
+        color: blue;
+    }
+    #In{
+        color: green;
+    } */
+
+    #headline::before{
+        content: "You";
+        color: blue;
+    }
+    .box{
+        height: 250px;
+        border: 2px solid red;
+        /* position: relative; */
+    }
+    #btn1{
+        /* position: static;       default */
+        /* can't use top, left, bottom or right with this position */
+    }
+    #btn2{
+        position: relative;
+        /* Element will move with respect to its original position */
+        /* Element keeps its original place reserved */
+        /* top: 10px; */
+        left: 10px;
+        bottom: 10px;
+        /* right: ; */
+    }
+    #btn3{
+        position: absolute;
+        /* Element will move with respect to body OR wrt its parent who has postion relative */
+        /* Element does not keeps its original place */
+        top: 10px;
+        /* left: 20px; */
+        right: 20px;
+        /* bottom: 10px; */
+    }
+    #btn4{
+        /* height: 50px; */
+        background-color: blue;
+        height: 30px;
+        
+        position: sticky;
+        top: 0;
+    }
+
+    #btn5{
+        border: 2px solid blue;
+        width: 100px;
+        height: 30px;
+        background-color: orange;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+
+        position: fixed;
+        /* converts the element into inline */
+        right: 20px;
+        bottom: 10px;
+    }
+
+</style>
+<body>
+    <!-- <h1><span id="I">I</span>Love<span id="In">India</span></h1> -->
+    <h1 id="headline">Love</h1>
+
+    <div class="box">
+        <br><br><br><br><br><br><br>
+        <button id="btn1">Static</button>
+        <button id="btn2">Relative</button>
+        <button id="btn3">Absolute</button>
+        <button id="btn4">Sticky</button>
+        <div id="btn5">Chat with me</div>Hello
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam cumque officia veritatis quidem sit expedita. Voluptates aperiam ex quas repudiandae culpa accusamus quisquam explicabo nemo voluptatem, voluptas dolorum commodi debitis hic vel consequatur saepe adipisci atque a perferendis harum accusantium sit. Odio distinctio eos ex minima sequi optio itaque nulla quos, quibusdam alias suscipit tempore reprehenderit magnam libero ad dolor assumenda debitis fugit! Quia impedit, inventore eligendi error optio perferendis exercitationem sint placeat dolore aliquid ab, excepturi hic? Incidunt praesentium corrupti illum numquam magni, similique hic delectus atque ipsum omnis itaque id modi totam qui quisquam accusamus enim eum quibusdam. Voluptas est dicta placeat accusamus optio amet dolorem recusandae eum. Minima numquam nisi quos soluta dolor! Commodi iure ipsum unde consectetur vitae, culpa asperiores. Corrupti laudantium beatae ut repudiandae explicabo, aliquid reiciendis maiores rem facilis excepturi eius voluptates vel sint cumque quisquam consectetur minima quasi sapiente sit? Itaque et minus amet velit dolorem repudiandae doloremque corrupti ullam inventore ipsa ratione unde vitae dolore, architecto cum quasi nulla sapiente id pariatur quidem? Ipsum ipsam minima error, placeat tenetur aperiam culpa magnam hic fugiat impedit veniam officiis ut commodi officia deserunt ipsa vero, eveniet, incidunt atque at molestias vel. Praesentium ducimus deserunt labore aspernatur at beatae nulla impedit, dolor corporis reiciendis, dicta quam libero! Optio porro magnam iste alias ut rem ipsam minus consectetur deleniti eligendi natus quas atque laboriosam a odio ex, cupiditate vero beatae nihil expedita vitae itaque? Dolore sit similique incidunt ex nam quia illum laudantium eveniet harum eius saepe repudiandae, tempora, sed, at voluptatibus adipisci ratione veniam vero eaque perspiciatis expedita quidem quasi error? Voluptatem voluptatibus possimus culpa adipisci id tenetur quaerat maiores dolor accusamus accusantium mollitia itaque animi iste doloribus expedita rem in libero, illo rerum suscipit delectus. Ullam eaque, recusandae illum maxime facilis aliquam consequatur reiciendis architecto sit quae earum fuga nulla unde aspernatur magni, a impedit accusantium, quibusdam voluptatum rerum modi nihil alias temporibus voluptatibus? Deleniti fugiat eum laudantium recusandae natus, dignissimos praesentium quaerat deserunt nemo dolore accusamus atque amet. Commodi tenetur pariatur adipisci! Sit ratione delectus possimus tempore nam perferendis minima molestiae accusamus non provident reprehenderit ab maiores fugiat sequi reiciendis, optio labore ipsa amet saepe culpa fuga modi! Amet pariatur suscipit, labore accusantium quaerat eos, commodi, magnam consequatur dignissimos quasi vero odio blanditiis asperiores voluptatum repellat quo similique id. Excepturi nam, consequatur adipisci quos voluptatum dicta consectetur exercitationem, numquam molestias facere sunt? Id quos omnis ullam rerum illo provident amet, delectus adipisci consectetur veniam repellat, labore porro natus eum cum praesentium ratione. Nobis voluptas recusandae quam mollitia excepturi magnam aspernatur maxime laborum deleniti, quis aut tempore aliquam? Totam, velit, temporibus reiciendis sapiente molestias dolor placeat, quis inventore voluptatibus distinctio atque. Aspernatur excepturi natus in non veritatis debitis nostrum id unde, nobis obcaecati harum voluptatum placeat praesentium recusandae at similique facilis itaque iusto. Maiores eius suscipit veritatis quo quasi tempora, enim expedita eveniet nostrum sed eaque nemo corrupti repellendus debitis repudiandae mollitia vel ipsam assumenda maxime aliquid voluptatum. Fuga, cumque impedit dolor sapiente neque numquam fugit rem voluptate commodi, quam veniam ea odit nisi minus temporibus perferendis perspiciatis? Quam nam esse, sit expedita voluptatibus quae iste aliquam voluptate consectetur, aliquid odio iusto ipsa accusantium quia minus deserunt magnam sint perferendis. Quidem dolores sed, possimus et porro ex non amet cum earum impedit tempora officiis distinctio, qui ipsam alias corporis esse? Sed, unde maiores? Eum, eligendi animi ipsam fuga maiores iure numquam dolore rerum, molestiae iste eos? Sunt tempore excepturi ratione praesentium aperiam ipsum rerum necessitatibus nihil esse pariatur totam voluptate, repellat et suscipit quis fugit veritatis reiciendis quasi quidem eveniet facilis officia ab quam. Atque, vero, minus nesciunt quasi laborum doloribus eveniet sed assumenda voluptatibus, ut earum unde fuga id eius! Illum, fugit. Ipsa neque aut tempora quae debitis omnis a accusantium iusto, totam sapiente dolores quas optio vero blanditiis voluptatibus possimus, similique nulla quis! Nobis deserunt eum harum ex ullam. Aut minima necessitatibus expedita modi, nam, libero rerum nisi architecto officia soluta, commodi dolore voluptatem? Voluptas recusandae tenetur modi ullam fugiat optio esse repudiandae ea expedita assumenda possimus quos explicabo doloremque dicta alias quisquam, quibusdam quam velit architecto consequuntur aut ipsam nisi reprehenderit illum! Placeat officia, ullam asperiores harum distinctio provident, nam beatae optio ipsam omnis labore consectetur consequatur repellat. Aut tenetur magni, nam reiciendis laborum unde ad numquam dicta expedita illum doloremque minus tempore voluptatum iusto eos a quasi dolor quia in. Sint ipsam odit earum rerum dolorum labore expedita id vel recusandae incidunt? Aut dolor laborum ipsam eum, possimus nobis inventore quibusdam officiis eos deleniti similique eaque illum omnis vero! Eligendi fugit obcaecati cumque alias, repellat ab enim ipsa eos? Fugiat excepturi provident illum debitis sint ex minima, quo facilis, ea nam et voluptates libero cupiditate sapiente quos tenetur doloribus obcaecati. Rem ut iusto, corporis eveniet sapiente molestias illo est praesentium, qui sunt voluptatum. Aut earum ut, ducimus qui dolorum nihil eum magni reprehenderit maxime laboriosam pariatur non atque voluptatem, facere praesentium impedit illo tempora enim quod necessitatibus sed! Amet ducimus ipsam praesentium voluptates reprehenderit numquam corrupti ea non iure, fugiat deserunt necessitatibus doloribus sequi? Saepe hic enim cumque tenetur eligendi earum, dolores placeat natus maiores nulla vitae eaque sapiente quos eius aut laudantium nostrum fugiat impedit repellat unde esse! Excepturi aliquam sunt cumque facilis magnam, quo eum. Esse est tenetur eaque qui officiis, laudantium molestias velit id debitis inventore. Quas recusandae doloremque dignissimos placeat, temporibus quam culpa distinctio quae excepturi, voluptates nobis inventore nostrum nesciunt, neque odio? Delectus ipsam illum nesciunt ab placeat quibusdam quidem et aliquid, error officiis nemo illo ipsa ut aspernatur tenetur nostrum odit? Tenetur excepturi quam, laborum quae ratione labore fuga pariatur! Ea dicta doloribus aut odio. Distinctio laborum porro facere totam minima impedit incidunt tempora est fuga veritatis corrupti optio, dolore ad quisquam iusto officia delectus necessitatibus! Atque officiis eius, voluptatum molestias accusantium excepturi vitae at eveniet porro est magnam facilis enim quibusdam blanditiis, autem illum reiciendis optio placeat dicta distinctio corporis laudantium consequuntur. Assumenda laborum modi possimus veniam dicta? Fugit iure est nesciunt.</p>
+</body>
+</html>

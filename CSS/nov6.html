@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar #clear-btn{
+        background-color: red;
+    }
+    .navbar .btn{
+        background-color: royalblue;
+    }
+    
+    /* multiple selector using ',' */
+    span, button{
+        background-color: darkcyan;
+    }
+    .join-btn, #clear-btn{
+        color: white;
+    }
+
+    /* combining the selectors */
+/*     
+    a{
+        text-decoration: none;
+    }
+    div a{
+        color: red;
+    }
+    div li a{
+        background-color: green;
+    }
+    div > a{
+        color: blue;
+    }
+    ul + a{
+        background-color: darkgoldenrod;
+    } */
+
+    li:nth-child(4){
+        background-color: grey;
+    }
+    li:nth-child(even){
+        background-color: lightgreen;
+    }
+    li:nth-child(odd){
+        background-color: maroon;
+    }
+    li:nth-child(5n-2){
+        color: white;
+    }
+
+    input[type="text"]{
+        background-color: yellow;
+    }
+
+    /* a[target="_blank"]{ */
+    a[target]{
+        color: violet;
+    }
+
+    input[placeholder]{
+        color: navy;
+    }
+</style>
+<body>
+    <div class="list-container" align="center">
+        <!--
+        <ul>
+            <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+            <li><a href="">Possimus repudiandae debitis tempore quam?</a></li>
+            <li><a href="">Iusto corporis ducimus debitis. Maiores!</a></li>
+            <li><a href="">Quidem minus molestiae facere deleniti.</a></li>
+            <li><a href="">Eius maiores veritatis repellendus sint!</a></li>
+        </ul>
+    -->
+        <a href="">Lorem, ipsum dolor.</a> <br>
+        <a href="">Expedita, distinctio porro!</a>
+        <ol>
+            <a href="" target="_blank"><li>Lorem ipsum dolor sit amet.</li></a>
+            <a href="" target=""><li>Veniam enim blanditiis illo ullam.</li></a>
+            <a href=""><li value="101">At repellat placeat officia sunt!</li></a>
+            <a href="" target="_blank"><li>Illum eius possimus iusto temporibus.</li></a>
+            <a href=""><li>Perferendis amet repudiandae iste eos!</li></a>
+        </ol>
+        <a href="">Lorem ipsum dolor sit.</a> <br>
+        <a href="">Autem saepe quae architecto!</a>
+        <hr>
+        <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Neque eum nemo dignissimos assumenda?</li>
+            <li>Laboriosam incidunt consequuntur consectetur quae!</li>
+            <li>Possimus aut at iusto saepe.</li>
+            <li>Ad dolores harum enim incidunt?</li>
+            <li>Reiciendis obcaecati expedita cum labore!</li>
+            <li>Eveniet expedita molestias nihil amet.</li>
+            <li>Quae velit accusantium hic commodi!</li>
+            <li>Delectus fuga dolores dignissimos ipsa.</li>
+            <li>Nam at in illo doloremque!</li>
+            <li>Autem dicta non nemo numquam.</li>
+            <li>Animi repellat distinctio quaerat quo.</li>
+            <li>Quibusdam consequatur mollitia placeat ratione?</li>
+            <li>Accusamus temporibus laboriosam nostrum quaerat.</li>
+            <li>Aliquam sequi illo maiores dolorem?</li>
+        </ul>
+    </div>
+    <form action="">
+        <input type="text" name="" id="" placeholder="First Name"> <br>
+        <input type="text" name="" id="" placeholder="Last Name"> <br>
+        Email: <input type="email" name="" id="">
+        <input type="password" name="" id="" placeholder="Password"> <br>
+        <input type="password" name="" id="" placeholder="Conform Password">
+    </form>
+</body>
+</html>

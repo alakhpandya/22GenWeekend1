@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/sep4.css">
+
+    <title>Document</title>
+</head>
+<!-- internal css -->
+<style>
+    /* Tag selectors */
+    p {
+        /* color: red; */
+        background-color: blueviolet;
+    }
+
+    div {
+        background-color: maroon;
+    }
+
+    /* Class Selector */
+
+    .green-bg {
+        background-color: green;
+        color: white;
+    }
+
+    /* id selector */
+    #para4 {
+        background-color: turquoise;
+    }
+
+    #unsubscribe-btn {
+        background-color: red;
+    }
+
+    /* Level of priority: ID Selector > Class selector > Tag selector */
+
+    /* Multiple Selectors */
+
+    /* selecting <li> who are decendents of a <div> */
+    div li {
+        background-color: goldenrod;
+    }
+
+    /* Selecting all <p> as well as all <a> */
+    p, a {
+        color: pink;
+    }
+
+    /* Selecting an <a> whose previous sibling is <p> */
+    p + a {
+        background-color: darkolivegreen;
+    }
+
+    /* Selecting an <li> who is a direct child of a <div> */
+    div > li {
+
+    }
+
+</style>
+
+<body>
+    <h1 style="background-color: yellowgreen;">Rem iste repellendus maxime omnis!</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel excepturi iusto voluptatibus eaque quae numquam?
+    </p>
+    <p class="green-bg" id="para2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel excepturi iusto
+        voluptatibus eaque quae numquam?</p>
+    <a class="green-bg" href="#">Contribute Us</a>
+    <a class="green-bg" href="#">Start Free Trial</a>
+    <!-- inline css -->
+    <p style="background-color: magenta;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel excepturi iusto
+        voluptatibus eaque quae numquam?</p>
+    <p id="para4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel excepturi iusto voluptatibus eaque quae
+        numquam?</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel excepturi iusto voluptatibus eaque quae
+            numquam?</p>
+    </div>
+    <button id="unsubscribe-btn" class="green-bg">Unsubscribe</button>
+    <button class="green-bg">Join</button>
+    <div>
+        <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Facere, suscipit?</li>
+            <div>
+                <li>Earum, qui.</li>
+            </div>
+            <li>Sequi, libero.</li>
+            <li>Provident, voluptas?</li>
+        </ul>
+    </div>
+</body>
+
+</html>

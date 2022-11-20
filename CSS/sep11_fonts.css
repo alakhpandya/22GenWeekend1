@@ -1,0 +1,17 @@
+/* Combo */
+@font-face {
+    font-family: Combo;
+    src: url('/fonts/Combo/Combo-Regular.ttf');
+}
+
+/* Montserrat */
+@font-face {
+    font-family: Monty;
+    src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+/* Poppins */
+@font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins/Poppins-Regular.ttf');
+}
