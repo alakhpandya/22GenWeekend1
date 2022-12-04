@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Livvic', sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.btn{
+    background-color: #0F79AF;
+    color: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00AAE1;
+    color: white;
+}
+
+nav{
+    display: flex;
+    height: 10vh;
+    background-color: #19222D;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+nav .brand-logo{
+    width: 150px;
+}
+
+nav .nav-menu, nav .nav-container, nav .user-options{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.nav-menu .nav-item{
+    color: #ddd;
+    font-size: 1.1rem;
+}
+.nav-menu .nav-item:hover{
+    color: #00AAE1;
+}
+
+nav .icon{
+    color: #ddd;
+    font-size: 1.5rem;
+}
