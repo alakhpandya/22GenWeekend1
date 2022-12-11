@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+:root{
+    --main-fonts: 'Lato', sans-serif;
+    --sub-fonts: 'Poppins', sans-serif;
+    --btn-bg: #116DFF;
+    --btn-text-col: #fff;
+    --text-col: #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--text-col);
+    font-family: var(--main-fonts);
+}
+
+a{
+    text-decoration: none;
+}
+
+.section-1{
+    background: url('/images/bg1.webp');
+    height: 100vh;
+}
+.section-1 .logo-container{
+    /* border: 2px solid red; */
+    height: 10vh;
+}
+
+.section-1 .brand-logo-white{
+    margin: 2rem 5vw;
+    width: 65px;
+}
+
+.section-1 .form-super-container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .form-container{
+    border: 2px solid blue;
+    /* height: 450px; */
+    width: 750px;
+    transform: translate(-8px, -5vh);
+    text-align: center;
+}
+
+.section-1 .form-container .form-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
