@@ -21,14 +21,17 @@ body{
     color: var(--text-col);
     font-family: var(--main-fonts);
 }
-
 a{
     text-decoration: none;
+}
+.site-title{
+    font-size: 3rem;
 }
 
 .section-1{
     background: url('/images/bg1.webp');
     height: 100vh;
+    background-size: 100vw 100vh;
 }
 .section-1 .logo-container{
     /* border: 2px solid red; */
@@ -41,21 +44,139 @@ a{
 }
 
 .section-1 .form-super-container{
+    /* border: 2px solid blue; */
     height: 90vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.section-1 .form_bg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .section-1 .form-container{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* height: 450px; */
     width: 750px;
-    transform: translate(-8px, -5vh);
     text-align: center;
+    z-index: 1;
 }
 
 .section-1 .form-container .form-title{
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-weight: 700;
+}
+
+.form-container .start_now_form{
+    /* border: 2px solid blue; */
+    width: 85%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start_now_form .normal-input{
+    width: 55%;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding-left: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--btn-bg);
+}
+.start_now_form .submit-btn{
+    width: 40%;
+    height: 3.5rem;
+    background-color: var(--btn-bg);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.start_now_form .submit-btn:hover{
+    background-color: #327ffa;
+}
+
+.submit-btn input{
+    background-color: transparent;
+    border: none;
+    /* width: 100%; */
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    color: var(--btn-text-col);
+    cursor: pointer;
+}
+.submit-btn .right-arrow-icon{
+    color: var(--btn-text-col);
+    font-size: 2rem;
+    /* border: 2px solid black; */
+}
+
+.form-container .form-footer-line{
+    font-size: 1.2rem;
+}
+
+
+/* ---------------------- Section 2 ---------------------- */
+.section-2{
+    background-image: url('/images/bg2.webp');
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-2 img{
+    height: 250px;
+}
+
+
+/* ---------------------- Section 3 ---------------------- */
+.section-3{
+    background-image: url('/images/bg3.webp');
+    height: 98vh;
+    background-size: 100vw 98vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 7vw;
+}
+
+.section-3 .card{
+    /* border: 2px solid blue; */
+    width: 350px;
+}
+.card .card-img-box{
+    text-align: center;
+}
+.card .card-img{
+    height: 240px;
+}
+
+.card .card-title{
+    font-size: 1.8rem;
+    margin: 2.5rem 0 1rem;
+}
+.card .card-text{
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+.card .card-link-box, .card .card-link{
+    color: var(--btn-bg);
+    font-size: 1.5rem;
+}
+.card .card-link{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--btn-bg);
+    margin-right: 0.5rem;
 }
