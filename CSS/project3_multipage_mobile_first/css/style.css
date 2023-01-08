@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@800&family=Work+Sans&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --title-fonts: 'Sofia Sans Condensed', sans-serif;
+    --normal-fonts: 'Work Sans', sans-serif;
+    --bg-color:black;
+    --secondary-color: lightskyblue;
+    --text-color: white;
+}
+body{
+    color: var(--text-color);
+    font-family: var(--normal-fonts);
+}
+a{
+    text-decoration: none;
+}
+/* -------------------------- Navbar -------------------------- */
+.navbar{
+    background-color: var(--bg-color);
+    padding: 1rem 1.5rem;
+    height: 100px;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-property: height;
+}
+.navbar .nav-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .brand-logo{
+    height: 70px;
+}
+.navbar .bar-icon{
+    font-size: 2.5rem;
+}
+
+.navbar .nav-expand{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.navbar .nav-link{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+/* -------------------------- Media Queries -------------------------- */
+@media screen and (min-width: 540px) {
+    .bar-icon{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .nav-expand{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+    .navbar .nav-link{
+        color: var(--bg-color);
+        background-color: var(--secondary-color);
+        padding: 0.2rem 0.6rem;
+        border-radius: 5px;
+        border: 1px solid var(--secondary-color);
+    }
+    .navbar .nav-link:hover{
+        border-color: var(--text-color);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+}
