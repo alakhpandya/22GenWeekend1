@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------- Font Awesome CSS ---------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ---------------------- Custom CSS ---------------------- -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Royal | Home Page</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-mobile">
+            <a href="/index.html"><img class="brand-logo" src="/img/logo_royal.png" alt=""></a>
+            <i onclick="document.querySelector('.navbar').style.height = '230px'" class="fa-solid fa-bars bar-icon"></i>
+        </div>
+        <div class="nav-expand">
+            <a class="nav-link" href="/login.html">Login</a>
+            <a class="nav-link" href="/signup.html">Signup</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <form action="">
+                <p class="title">Create Account</p>
+                
+                <div class="input-box">
+                    <input type="text" required name="" id="">
+                    <label for="">First Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required name="" id="">
+                    <label for="">Last Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required name="" id="">
+                    <label for="">Mobile No</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required name="" id="">
+                    <label for="">E-mail</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" required name="" id="">
+                    <label for="">Password</label>
+                    <span class="eye-icon"><i class="fa-regular fa-eye"></i></span>
+                </div>
+                <div class="input-box">
+                    <input type="password" required name="" id="">
+                    <label for="">Confirm Password</label>
+                    <span class="eye-icon"><i class="fa-regular fa-eye"></i></span>
+                </div>
+
+                <div class="gender-box">
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label> &nbsp;&nbsp;
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label> &nbsp;&nbsp;
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <div class="submit-box">
+                    <input type="submit" value="Register">
+                </div>
+                <div class="new-old-user-container">
+                    <div class="new-old-user-text">
+                        <span>Have an account?</span>
+                        <div class="line"></div>
+                    </div>
+                    <a class="btn" href="/login.html">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Next Class: Making this responsive & magic
+ -->

@@ -10,12 +10,14 @@
     --title-fonts: 'Sofia Sans Condensed', sans-serif;
     --normal-fonts: 'Work Sans', sans-serif;
     --bg-color:black;
-    --secondary-color: lightskyblue;
+    --secondary-color: rgb(76, 183, 249);
+    /* --third-color: roya; */
     --text-color: white;
 }
 body{
     color: var(--text-color);
     font-family: var(--normal-fonts);
+    background-color: var(--secondary-color);
 }
 a{
     text-decoration: none;
@@ -24,7 +26,7 @@ a{
 .navbar{
     background-color: var(--bg-color);
     padding: 1rem 1.5rem;
-    height: 100px;
+    height: 11vh;
     overflow: hidden;
     transition: 0.5s;
     transition-property: height;
@@ -39,6 +41,7 @@ a{
 }
 .navbar .bar-icon{
     font-size: 2.5rem;
+    cursor: pointer;
 }
 
 .navbar .nav-expand{
@@ -52,12 +55,152 @@ a{
     margin: 1rem 0;
 }
 
+/* -------------------------- form -------------------------- */
+
+.container{
+    /* border: 2px solid red; */
+    color: var(--third-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container{
+    height: 89vh;
+}
+
+.form-container{
+    width: 95%;
+    max-width: 450px;
+    background-color: var(--text-color);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+form{
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    position: relative;
+    color: var(--secondary-color);
+}
+form .title{
+    background-color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-60%);
+}
+
+form .input-box{
+    /* border: 2px solid red; */
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.input-box input:focus, .input-box input:valid{
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
 
 
+.input-box label{
+    /* border: 2px solid red; */
+    font-size: 1.2rem;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+
+.input-box .eye-icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input:focus + label, input:valid + label{
+    top: 0;
+    left: 10px;
+    font-size: 1rem;
+    background-color: var(--text-color);
+}
+
+form .gender-box{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.submit-box, .new-old-user-container{
+    width: 90%;
+    margin: auto;
+}
+form input[type = 'submit'], .btn{
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: var(--text-color);
+    padding: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.remember-forgotPwd-container{
+    /* border: 2px solid red; */
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.remember-forgotPwd-container a{
+    color: var(--secondary-color);
+}
+.remember-forgotPwd-container a:hover{
+    text-decoration: underline;
+}
 
 
-
-
+.new-old-user-container{
+    margin-top: 1rem;
+    text-align: center;
+}
+.new-old-user-text{
+    /* border: solid; */
+    position: relative;
+    margin-bottom: 1rem;
+}
+.new-old-user-text span{
+    z-index: 20;
+    background-color: var(--text-color);
+    position: relative;
+}
+.new-old-user-text .line{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 45%;
+}
+.btn{
+    display: inline-block;
+}
 
 /* -------------------------- Media Queries -------------------------- */
 @media screen and (min-width: 540px) {
