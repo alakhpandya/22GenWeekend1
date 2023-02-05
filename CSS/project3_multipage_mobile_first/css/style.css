@@ -5,14 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 :root{
     --title-fonts: 'Sofia Sans Condensed', sans-serif;
     --normal-fonts: 'Work Sans', sans-serif;
-    --bg-color:black;
-    --secondary-color: rgb(76, 183, 249);
-    /* --third-color: roya; */
-    --text-color: white;
+    --bg-color: #CD5888;
+    --secondary-color: #20262E;
+    --text-color: #E9E8E8;
 }
 body{
     color: var(--text-color);
@@ -96,7 +95,6 @@ form .title{
 }
 
 form .input-box{
-    /* border: 2px solid red; */
     margin-bottom: 2rem;
     position: relative;
 }
@@ -228,5 +226,22 @@ form input[type = 'submit'], .btn{
         border-color: var(--text-color);
         background-color: var(--bg-color);
         color: var(--text-color);
+    }
+}
+
+@media (min-width: 700px){
+    .lg-screen-user-details{
+        /* border: 2px solid red; */
+        width: 90%;
+        margin: auto;
+        display: flex;
+        gap: 1rem;
+    }
+    .form-container{
+        max-width: 750px;
+    }
+    .left, .right{
+        /* border: 2px solid red; */
+        width: 100%;
     }
 }
