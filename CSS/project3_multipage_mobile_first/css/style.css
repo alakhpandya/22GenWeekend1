@@ -93,6 +93,9 @@ form .title{
     left: 10px;
     transform: translateY(-60%);
 }
+.lg-screen-user-details{
+    display: none;
+}
 
 form .input-box{
     margin-bottom: 2rem;
@@ -230,6 +233,9 @@ form input[type = 'submit'], .btn{
 }
 
 @media (min-width: 700px){
+    .sm-screen-user-details{
+        display: none;
+    }
     .lg-screen-user-details{
         /* border: 2px solid red; */
         width: 90%;
