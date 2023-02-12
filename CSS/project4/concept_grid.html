@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: azure;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    
+    .parent{
+        display: grid;
+        gap: 1rem;
+        /* grid-template-columns: 400px 400px 400px; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: 2fr 1fr 1fr; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .allCards{
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+    #card1{
+        background-color: blueviolet;
+        grid-column: span 2;
+    }
+    #card2{
+        background-color: slategray;
+    }
+    #card3, #card4{
+        background-color: white;
+    }
+    #card5{
+        background-color: #222;
+        grid-column: span 2;
+    }
+    #card1, #card2, #card5{
+        color: white;
+    }
+    #card3{
+        grid-row: span 2;
+    }
+
+</style>
+<body>
+    <div class="parent">
+        <div class="allCards" id="card1">
+            <h1>Lorem, ipsum.</h1>
+            <p>Lorem, ipsum.</p>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae harum obcaecati nisi culpa nesciunt laboriosam architecto odio hic dicta, ratione officia quo nulla! Quisquam accusamus sequi id optio quos?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rem, odit quae necessitatibus eligendi optio ut, vitae minima ullam repellendus impedit reiciendis id veritatis natus atque inventore laudantium ducimus modi alias temporibus eius, voluptas illum fuga voluptates? Vel nihil laboriosam ipsum aliquam magni reprehenderit odio, tenetur modi, sed corporis neque quidem. Consectetur libero et aperiam, atque sed omnis harum officia eaque molestiae necessitatibus nemo tempora sapiente voluptate, perspiciatis totam quae repellat commodi nisi voluptas nobis veniam laborum officiis. Fuga, consequatur veniam accusantium ut mollitia architecto voluptatibus labore cum nulla doloribus.</p>
+        </div>
+        <div class="allCards" id="card2">
+            <h1>Quidem, corporis.</h1>
+            <p>Iure, porro.</p>
+            <h2>Alias blanditiis asperiores quas excepturi placeat quae minus!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat commodi recusandae id, architecto neque nulla distinctio, error laboriosam suscipit sequi quis sunt totam voluptates a dolorem quia, veritatis omnis.</p>
+        </div>
+        <div class="allCards" id="card3">
+            <h1>Porro, vero?</h1>
+            <p>Repellendus, praesentium!</p>
+            <h2>Sed eaque esse tempore iste maiores aliquam ipsa suscipit!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, explicabo. Facilis, iste consequuntur excepturi nisi sequi dignissimos ea, corporis beatae laborum eos temporibus. Molestias commodi veritatis doloremque neque reiciendis debitis ipsum, placeat dolore rem recusandae dolor quasi aspernatur nisi enim tempora accusantium qui nemo amet obcaecati! Iure sapiente hic suscipit. Distinctio error quas asperiores tempore. Nesciunt modi maxime quod sint, fuga eligendi ipsum, totam illo deleniti repellendus eos doloremque aspernatur ab consequuntur nemo natus magni quisquam ea voluptatum dolorem excepturi odio. Officiis et at deserunt cum. Enim, optio dignissimos voluptatum quisquam laborum doloremque dicta delectus nesciunt molestiae earum libero numquam maiores labore, ratione quo! Veniam accusantium, ipsa labore, amet repellendus illum dolore in error nemo id dignissimos alias sed tempora harum? Esse, repudiandae enim? Vel odio cumque nostrum doloribus rem, maiores animi ipsum possimus id ea maxime sed aspernatur excepturi, a repellendus libero saepe laborum iusto? Nisi aspernatur et obcaecati.</p>
+            
+        </div>
+        <div class="allCards" id="card4">
+            <h1>Doloremque, praesentium.</h1>
+            <p>Voluptates, eum?</p>
+            <h2>Velit, sunt. Odit aliquam, consectetur porro aut commodi.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel tempora hic rem veritatis aliquam saepe dolores ullam pariatur modi itaque!</p>
+        </div>
+        <div class="allCards" id="card5">
+            <h1>Omnis, ab.</h1>
+            <p>Accusantium, suscipit.</p>
+            <h2>Libero numquam quibusdam unde maiores officiis, facere suscipit molestias, similique vero sapiente nobis blanditiis quasi totam! Doloremque, maiores maxime consectetur nesciunt laudantium quod repellat unde placeat neque doloribus odit cumque?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam id atque autem repudiandae consectetur minus, illum quis excepturi labore dicta, ex fugiat facilis recusandae, accusamus cumque sunt itaque quam dolore hic blanditiis vitae quasi eligendi! Commodi dolorum id adipisci porro officiis placeat ea nulla, consequuntur necessitatibus, quisquam molestias est, rem vero culpa aliquam. Dignissimos quod, aut autem earum corrupti laboriosam adipisci? Ipsam sit aperiam quaerat quo maxime atque quisquam?</p>
+        </div>
+    </div>
+</body>
+</html>
