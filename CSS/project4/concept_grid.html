@@ -14,7 +14,7 @@
     }
     body{
         background-color: azure;
-        height: 100vh;
+        /* height: 100vh; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -28,17 +28,14 @@
         /* grid-template-columns: 1fr 1fr 1fr; */
         /* grid-template-columns: 2fr 1fr 1fr; */
         /* grid-template-columns: repeat(3, 1fr); */
-        grid-template-columns: repeat(4, 1fr);
+        
     }
-
-
     .allCards{
         padding: 1.5rem;
         border-radius: 10px;
     }
     #card1{
         background-color: blueviolet;
-        grid-column: span 2;
     }
     #card2{
         background-color: slategray;
@@ -48,15 +45,29 @@
     }
     #card5{
         background-color: #222;
-        grid-column: span 2;
     }
     #card1, #card2, #card5{
         color: white;
     }
-    #card3{
-        grid-row: span 2;
+    @media (min-width: 700px){
+        .parent{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #card1{
+            grid-column: span 2;
+        }
+        #card5{
+            grid-column: span 2;
+        }
+        #card3{
+            grid-row: span 2;
+        }
     }
-
+    @media (min-width: 900px){
+        .parent{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
 </style>
 <body>
     <div class="parent">
