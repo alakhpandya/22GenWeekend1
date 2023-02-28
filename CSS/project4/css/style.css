@@ -1,0 +1,84 @@
+@import url("/css/fonts.css");
+
+/* ----------------------------- Variables ----------------------------- */
+:root{
+    /* fonts */
+    --button_fonts: "livvic", cursive;
+    --primary_fonts: "abel", fantasy;
+    --secondary_fonts: "lexend", fantasy;
+    --headline_fonts: "anton", monspace;
+
+    /* color */
+    --dark_grey: #3f4954;
+    --text_light: #686666da;
+    --nav_hover: #104f55;
+    --btn_bg: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --black: #0f0f0f;
+}
+
+/* ----------------------------- CSS Reset ----------------------------- */
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------- Global Styling ----------------------------- */
+body{
+    font-family: var(--primary_fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.brand_logo{
+    font-family: var(--secondary_fonts);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--dark_grey);
+}
+
+
+
+/* ----------------------------- Header ----------------------------- */
+nav{
+    background-color: cyan;
+    height: 5rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .bar_icon{
+    font-size: 1.5rem;
+    color: var(--dark_grey);
+}
+nav .nav_toggle{
+    display: none;
+    background-color: lightgreen;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    padding: 1.5rem;
+    width: 100%;
+}
+nav .nav_expand{
+    display: block;
+}
+nav .nav_menu{
+    padding-left: 3rem;
+}
+nav .nav_link{
+    font-size: 1.2rem;
+    color: var(--dark_grey);
+}
+nav .nav_item{
+    margin-bottom: 2.5rem;
+}
+nav .social_link{
+    color: var(--dark_grey);
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
