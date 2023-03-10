@@ -14,6 +14,7 @@
     --nav_hover: #104f55;
     --btn_bg: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     --black: #0f0f0f;
+    --white: #fff;
 }
 
 /* ----------------------------- CSS Reset ----------------------------- */
@@ -26,6 +27,7 @@
 /* ----------------------------- Global Styling ----------------------------- */
 body{
     font-family: var(--primary_fonts);
+    background-color: black;
 }
 a{
     text-decoration: none;
@@ -38,13 +40,28 @@ ul{
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--dark_grey);
+    white-space: nowrap;
+}
+.btn{
+    font-family: var(--button_fonts);
+    background: var(--btn_bg);
+    border: none;
+    padding: 0.9em 3rem;
+    border-radius: 1.7em;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
+.banner-btn:hover{
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
 
+/* ----------------------------- Navbar ----------------------------- */
 
-/* ----------------------------- Header ----------------------------- */
 nav{
-    background-color: cyan;
+    background-color: var(--white);
     height: 5rem;
     padding: 1.5rem;
     display: flex;
@@ -57,12 +74,15 @@ nav .bar_icon{
 }
 nav .nav_toggle{
     display: none;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     position: absolute;
     top: 5rem;
     left: 0;
     padding: 1.5rem;
     width: 100%;
+}
+nav .nav_menu_lg, nav .social_handles_lg{
+    display: none;
 }
 nav .nav_expand{
     display: block;
@@ -77,8 +97,73 @@ nav .nav_link{
 nav .nav_item{
     margin-bottom: 2.5rem;
 }
+nav .nav_item:hover{
+    background-color: var(--nav_hover);
+}
+nav .nav_item:hover > .nav_link{
+    color: var(--white);
+}
 nav .social_link{
     color: var(--dark_grey);
     margin-right: 0.5rem;
     font-size: 1.2rem;
+}
+nav .social_link:hover{
+    color: var(--text_light);
+}
+/* ----------------------------- Banner ----------------------------- */
+.banner-container{
+    height: 110vh;
+    position: relative;
+    padding-top: 10rem;
+}
+.banner-container::before{
+    content: "";
+    height: 110vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('/assets/pexels-deva-darshan.jpg') top left/1500px no-repeat;
+    opacity: 0.75;
+    z-index: -1;
+}
+#wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.banner-container .banner-text{
+    text-align: center;
+    color: var(--white);
+}
+.banner-container .banner-title{
+    font-size: 21px;
+    margin-bottom: 0.5rem;
+}
+.banner-container .banner-headline{
+    font-family: var(--secondary_fonts);
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+/* ----------------------------- Media Queries ----------------------------- */
+
+@media (min-width: 750px){
+    nav .bar_icon{
+        display: none;
+    }
+    
+    nav .nav_menu_lg{
+        display: flex;
+        padding-left: 0;
+    }
+    nav .social_handles_lg{
+        display: flex;
+    }
+    nav .nav_item{
+        margin-bottom: 0;
+        height: 5rem;
+        padding: 1.8rem 1rem 0;
+    }
 }
