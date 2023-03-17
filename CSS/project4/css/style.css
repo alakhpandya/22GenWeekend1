@@ -27,7 +27,6 @@
 /* ----------------------------- Global Styling ----------------------------- */
 body{
     font-family: var(--primary_fonts);
-    background-color: black;
 }
 a{
     text-decoration: none;
@@ -125,7 +124,6 @@ nav .social_link:hover{
     top: 0;
     left: 0;
     background: url('/assets/pexels-deva-darshan.jpg') top left/1500px no-repeat;
-    opacity: 0.75;
     z-index: -1;
 }
 #wave{
@@ -147,6 +145,32 @@ nav .social_link:hover{
     margin-bottom: 2rem;
 }
 
+/* ----------------------------- Carousel ----------------------------- */
+main{
+    border: solid red;
+    background: url('/assets/Abract01.png') no-repeat center bottom/100%;
+    padding-top: 5rem;
+}
+.carousel .item{
+    /* border: solid blue; */
+    text-align: center;
+    width: 95%;
+    max-width: 350px;
+    margin: 3rem auto;
+    box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.5rem;
+}
+.item h3{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+.item p{
+    margin: 2rem 0 0.5rem;
+}
+.arrow-icon{
+    font-size: 2rem;
+}
+
 /* ----------------------------- Media Queries ----------------------------- */
 
 @media (min-width: 750px){
@@ -165,5 +189,11 @@ nav .social_link:hover{
         margin-bottom: 0;
         height: 5rem;
         padding: 1.8rem 1rem 0;
+    }
+
+    main{
+        border: solid red;
+        background: url('/assets/Abract01.png') no-repeat top right/65%;
+        padding-top: 5rem;
     }
 }
