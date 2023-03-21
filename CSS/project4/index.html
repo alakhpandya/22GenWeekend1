@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- --------------------- AOS CSS --------------------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- --------------------- Custom CSS --------------------- -->
     <link rel="stylesheet" href="/css/style.css">
 
@@ -73,7 +76,7 @@
         </nav>
 
         <div class="banner-container">
-            <div class="banner-text">
+            <div class="banner-text" data-aos="fade-up">
                 <h2 class="banner-title">Tours & Travels</h2>
                 <h3 class="banner-headline">Amazing Place On Earth</h3>
                 <button class="btn banner-btn">Explore</button>
@@ -84,15 +87,11 @@
         </div>
     </header>
     <main>
-        
-        <!-- Owl Carousel -->
-        <!-- <div class="owl-nav">
-            <span class="owl-prev"><i class="fa-solid fa-arrow-left-long arrow-icon"></i></span>
-            <span class="owl-next"><i class="fa-solid fa-arrow-right-long arrow-icon"></i></span>
-        </div> -->
+    
+        <!-- --------------------- Owl Carousel --------------------- -->
         
         <div class="owl-carousel owl-theme carousel">
-            <div class="item">
+            <div class="item" data-aos="fade-right">
                 <img src="/assets/carousel/post-1.jpg" alt="">
                 <h3>London Fashion Week's Continued Evolution</h3>
                 <button class="btn">Fashion</button>
@@ -154,6 +153,109 @@
             </div>
         </div>
         
+        <!-- --------------------- Blog Area --------------------- -->
+        <div class="grid-parent">
+            <div class="blog-post-section">
+                <div class="blog-post" data-aos="zoom-in">
+                    <img src="/assets/Blog-post/blog1.png" alt="">
+                    <h3 class="blog-title">Why should boys have all the fun? it's the women who are making india an alcohol-loving contry</h3>
+                    <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?</p>
+                    <button class="btn blog-btn">
+                        Read More &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <hr class="blog-post-seperator">
+                <div class="blog-post" data-aos="zoom-in">
+                    <img src="/assets/Blog-post/blog2.png" alt="">
+                    <h3 class="blog-title">Why should boys have all the fun? it's the women who are making india an alcohol-loving contry</h3>
+                    <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?</p>
+                    <button class="btn blog-btn">
+                        Read More &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <hr class="blog-post-seperator">
+                <div class="blog-post" data-aos="zoom-in">
+                    <img src="/assets/Blog-post/blog3.png" alt="">
+                    <h3 class="blog-title">Why should boys have all the fun? it's the women who are making india an alcohol-loving contry</h3>
+                    <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?</p>
+                    <button class="btn blog-btn">
+                        Read More &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <hr class="blog-post-seperator">
+                <div class="blog-post" data-aos="zoom-in">
+                    <img src="/assets/Blog-post/blog4.png" alt="">
+                    <h3 class="blog-title">Why should boys have all the fun? it's the women who are making india an alcohol-loving contry</h3>
+                    <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?</p>
+                    <button class="btn blog-btn">
+                        Read More &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="pagination">
+                    <div><i class="fa-solid fa-angle-left angle-icon"></i></div>
+                    <div class="page">1</div>
+                    <div class="page">2</div>
+                    <div class="page">3</div>
+                    <div><i class="fa-solid fa-angle-right angle-icon"></i></div>
+                </div>
+            </div>
+            <aside>
+                <!-- Category -->
+                <section class="category">
+                    <h3 class="sidebar-title">Category</h3>
+                    <div data-aos="fade-left" class="category-btn-container">
+                        <button class="category-btn btn">
+                            <span>Software</span>
+                            <span>(05)</span>
+                        </button>
+                    </div>
+                    <div data-aos="fade-left" class="category-btn-container">
+                        <button class="category-btn btn">
+                            <span>Technology</span>
+                            <span>(02)</span>
+                        </button>
+                    </div>
+                    <div data-aos="fade-left" class="category-btn-container">
+                        <button class="category-btn btn">
+                            <span>Lifestyle</span>
+                            <span>(07)</span>
+                        </button>
+                    </div>
+                    <div data-aos="fade-left" class="category-btn-container">
+                        <button class="category-btn btn">
+                            <span>Shopping</span>
+                            <span>(01)</span>
+                        </button>
+                    </div>
+                    <div data-aos="fade-left" class="category-btn-container">
+                        <button class="category-btn btn">
+                            <span>Food</span>
+                            <span>(08)</span>
+                        </button>
+                    </div>
+                </section>
+                
+                <!-- Popular Posts -->
+                <section class="popular-post-container">
+                    <div class="popular-post">
+                        <img src="/assets/popular-post/m-blog-1.jpg" alt="">
+                        <h3 class="popular-post-title">New data recording system to better analyse road accidents</h3>
+                    </div>
+                </section>
+
+                <!-- Newsletter -->
+
+                <!-- Popular Tags -->
+
+            </aside>
+        </div>
+
+
     </main>
     <footer>
 
@@ -164,6 +266,9 @@
 
 <!-- Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- Custom JS -->
 <script src="/js/main.js"></script>

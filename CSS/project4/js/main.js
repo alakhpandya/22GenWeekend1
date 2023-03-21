@@ -18,4 +18,6 @@ $('.owl-carousel').owlCarousel({
             items:3
         }
     }
-})
+});
+
+AOS.init();
