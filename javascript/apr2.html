@@ -6,12 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<style>
+    body{
+        background-color: black;
+    }
+    #date{
+        background-color: greenyellow;
+        border: 1px solid;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
+
+    #bulb-img{
+        height: 300px;
+    }
+
+    #para1{
+        border: 1px solid white;
+        padding: 0.5rem 1.5rem;
+        color: white;
+        width: fit-content;
+    }
+</style>
+<body id="body">
     <!-- 
-        Mongo DB
+        Mongo DB            - Database
         Express js
-        Angular js/React js
-        Node js
+        Angular js/React js - FronEnd
+        Node js             - BackEnd
     -->
+    <button onclick="print()" style="display: block; margin-left: auto;">Print This Page</button>
+    <h1 id="title"></h1>
+    <button onclick="document.getElementById('title').innerText = 'Welcome to JS!'">See Text</button>
+    <span onclick="document.getElementById('date-box').innerText = Date()" id="date">Tell me the date of today</span>
+    <p id="date-box"></p>
+    <div>
+        <img src="/images/bulb_off.png" id="bulb-img" alt="">
+    </div>
+    <button onclick="document.getElementById('bulb-img').src = '/images/bulb_on.png'; document.getElementById('body').style.backgroundColor = 'yellow'" id="on">On</button>
+    <button onclick="document.getElementById('bulb-img').src = '/images/bulb_off.png'; document.getElementById('body').style.backgroundColor = 'black'" id="off">Off</button>
+
+    <button onclick="document.write(30)">Show Output</button>
+
+    <p id="para1">Style Me!</p>
+    <button onclick="document.getElementById('para1').style.fontSize = '2.5rem'; document.getElementById('para1').style.fontWeight = 'bold';">Style It!</button>
 </body>
+<script>
+    // Internal Javascript
+    // Single line comment
+    /*
+    Multi line
+    comment
+    */
+    // a = 10;
+    // b = 20;
+    // c = a + b;
+
+    // Option - 4 : Black Magic
+    // document.write(c);
+    
+</script>
+<script src="/apr9.js"></script>
 </html>
