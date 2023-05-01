@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+
+ </body>
+ <script>
+    // datatypes: arrays
+    /*
+    let myArray = [1,2,3,4];
+    console.log(myArray);
+    console.log(typeof(myArray));
+
+    console.log(myArray[2]);
+    myArray[2] = "Bhavnagar"
+    console.log(myArray);
+
+    console.log(myArray.length);
+    */
+    // objects
+    /*
+    result = { "Maths" : 90, "Physics" : 85, "Computers" : 100 }
+    console.log(result);
+    // console.log(result.length);  can't find it like this
+    console.log(result["Maths"]);
+    console.log(result["Computers"]);
+    */
+
+    // string operations
+    // concatenation
+    /*
+    let s1 = "This is a string.";
+    let s2 = 'This is too.';
+    let s3 = s1 + s2;
+    // console.log(s3);
+    let s4 = "I don't want to purchase a new laptop now."
+    let s5 = 'He said to me "You should consider upgrading your laptop."'
+    let s6 = "He said to me \"You should consider upgrading your laptop.\" \nbut, I don't want to purchase a new laptop now."
+// index no   0123456789....................................................................................................
+// -ve index: .....................................................................................................987654321
+    console.log(s6);
+    */
+
+    // string slicing:
+    /*
+    console.log(s6.slice(5, 36));
+    console.log(s6[12]);
+    console.log(s6[13]);
+    console.log(s6[14]);
+
+    console.log(s6.slice(11, 40))
+    console.log(s6.substring(11, 40))
+
+    console.log(s6.slice(4, -6));
+    console.log(s6.substring(2, -2));   // Doesn't work with -ve index
+
+    console.log(s6.substr(4, 15));   
+    console.log(s6.indexOf('Y'));
+    console.log(s6.indexOf('o'));
+    console.log(s6.indexOf('o', 10));
+    console.log(s6.indexOf('Y', 20));
+    console.log(s6.indexOf('ould'));
+
+    console.log(s6.charAt(35));
+    console.log(s6.charCodeAt(35));
+
+    console.log(s6.lastIndexOf('o'));
+    console.log(s6.replace('You', 'Me'));
+
+    let date = '1',
+    month = '11',
+    year = '2023';
+    console.log(date, month, year);
+    newDate = date.padStart(2, '0');
+    newMonth = month.padStart(2, '0');
+    console.log(newDate, newMonth, year);
+    test = date.padEnd(5, 'a');
+    console.log(test);
+
+    console.log(s6.toLowerCase());
+    console.log(s6.toUpperCase());
+
+    let a = "                        Hello World!         ";
+    console.log(a);
+    console.log(a.length);
+    console.log(a.trim());
+    console.log(a.trim().length);
+    */
+
+    // Conditional statements
+    /*
+    if (condition){
+        // code that has to be executed when 'condition' is true.
+    }
+
+    if (condition){
+        // code that has to be executed when 'condition' is true.
+    }
+    else{
+        // code that has to be executed when 'condition' is false.
+    }
+
+    if (condition-1){
+        // code that has to be executed when 'condition-1' is true.
+    }
+    else if (condition-2){
+        // code that has to be executed when 'condition-2' is true.
+    }
+    else{
+        // code that has to be executed when both the conditions are false.
+    }
+    */
+    
+    // Taking input in js:
+    let a = prompt("Enter a:")
+    console.log(a);
+    console.log(typeof(a));
+    let b = Number(prompt("Enter b:"))
+    console.log(b);
+    console.log(typeof(b));
+    /*
+        Strokes         Nick names
+        1               Hole-in-one
+        <= par -2       Eagle
+        par - 1         Birdie
+        par             Par
+        par + 1         Bogey
+        par + 2         Double Bogey
+        >= par + 3      Go Home
+
+    example: par = 5
+    */
+    // Ask user for par and strokes and print the score accordingly.
+
+ </script>
+ </html>
+ <!-- Next Class: How to create functions (not in very much depth), switch case -->
