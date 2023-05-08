@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    function <name_of_the_function> (<argument1, argument2...>) {
+        // code
+        // return statement
+    }
+    */
+    /*
+    function scanArray(){
+        let n = Number(window.prompt("Enter length of the array: "));
+        window.alert(n);
+        console.log(n);
+        console.log(typeof(n));
+    }
+    // scanArray();
+    console.log(document);
+    console.log(window);
+    console.log(console);
+    */
+    /*
+    function scanArray(){
+        let n = Number(prompt("Enter length of your array:"));
+        let arr = [];
+        for(let i = 0; i < n; i++){
+            arr.push(Number(prompt("number:")));
+        }
+        // console.log(arr);
+        return arr;
+    }
+    let arr = scanArray();
+    // console.log(arr);
+
+    function printArray(input_array){
+        console.log(input_array);
+    }
+
+    printArray(arr);
+    */
+
+    // create a js function with name 'getScore' that takes two arguments - par & strokes and returns the score. In the main program print the score on console.
+    /*
+    function getScore(par, strokes){
+        if (strokes == 1){
+            return "Hole in One";
+        }
+        else if (strokes <= par-2){
+            return "Eagle";
+        }
+        else if (strokes < par){
+            return "Birdie";
+        }
+        else if (strokes == par){
+            return "Par";
+        }
+        else if (strokes <= par + 2){
+            return "Bogey";
+        }
+        else if (strokes == par + 3){
+            return "Double Bogey";
+        }
+        else{
+            return "Go Home";
+        }
+    }
+
+    let par = Number(prompt("Par:"));
+    let strokes = Number(prompt("Strokes:"));
+    alert(getScore(par, strokes));
+    */
+
+    // switch case in js:
+    /*
+    let a = 5, b = 7, operation;
+    operation = prompt("Enter Operation (+, -, * or /):");
+    switch(operation){
+        case '+':
+            alert(a + b);
+            break;
+        case '-':
+            alert(a - b);
+            break;
+        case '*':
+            alert(a * b);
+            break;
+        case '/':
+            alert(a / b);
+            break;
+        default:
+            alert("Invalid Operation, please try again...");
+    }
+    */
+
+    // let myArray = [12, 0, -35, 34.43, -67.69, "JavaScript", "NodeJS", "React"];
+    // console.log(myArray[3]);
+    // console.log(myArray.length);
+    // console.log(myArray);
+    // for(let i = 0; i < myArray.length; i++){
+    //     console.log(myArray[i]);
+    // }
+    // let yourArray = [12, 0, -35, 1000, 34.43, -67.69];
+    // console.log(yourArray.sort());
+    // console.log(yourArray);
+
+    /*
+    let ourArray = ["ahemdabad", "soja", "dashrath", "porbandar", "vadodara", "gandhinagar"];
+    ourArray.sort();
+    console.log(ourArray);
+    */
+
+    /*
+    let ourArray = ["ahemdabad", "soja", "dashrath", "porbandar", "vadodara", "gandhinagar"];
+    ourArray.push("kakinada");
+    console.log(ourArray);
+
+    let removed_city = ourArray.pop();
+    console.log(ourArray);
+    console.log(removed_city);
+
+    removed_city = ourArray.shift()
+    console.log(ourArray);
+    console.log(removed_city);
+
+    ourArray.unshift("pune");
+    console.log(ourArray);
+    */
+
+    // let my2dArray = [[1,2,3], [4,5,6], [7,8,9]];
+    /*
+    let my2dArray = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ];
+
+    console.log(my2dArray.length);
+    console.log(my2dArray[1][2]);
+    */
+
+    let myArray = [
+    ["apple", "banana", "kiwi"],
+    ["carrot", "spinach", "sprouts"],
+    [
+        [4, 9, 16],
+        [2, 3, 4]
+    ]
+]
+
+    // 9
+    console.log(myArray[2][0][1]);
+</script>
+</html>
+<!-- Next Class: Objects -->
