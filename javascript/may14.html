@@ -12,6 +12,7 @@
 <script>
     // JS Object ~ Dictionaries in Python
     // let student = { name : "Preyas", course : "CS651", degree : "Graduate", duration : 4};
+    /*
     let student = { 
         name : "Preyas", 
         "course" : "CS651", 
@@ -27,7 +28,35 @@
 
     delete student.degree;
     console.log(student);
+    */
+    /*
+    let a = Number(prompt("a:"));   // 5
+    let b = Number(prompt("b:"));   // 13
+    let op = prompt("+, -, * or /:");   // *
+    let lookup = {
+        "+" : a + b,
+        "-" : a - b,
+        "*" : a * b,
+        "/" : a / b
+    };
+    console.log(lookup[op]);
+    */
 
+    // hasOwnProperty
+    let myDog = {
+        name : "Neny",
+        breed : "Schitzu",
+        legs : 4,
+        friend : "Everyone"
+    }
 
+    // console.log(myDog.hasOwnProperty('bark'));
+    // console.log(myDog.hasOwnProperty('friend'));
+    
+
+    // Create a fuction that takes an object & a property as arguments and returns the value of that property if it exists in the object otherwise, returns this message- "No such property exists in this object."
 </script>
 </html>
+<!-- 
+    Next class: Nested Objects, Accessing property from a nested object, Complex Objects, Accessing a property from complext objects, Coding Challenge
+ -->
