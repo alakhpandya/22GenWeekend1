@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    function getValue(obj, property){
+        if(obj.hasOwnProperty(property)){
+            console.log(obj[property]);
+        }
+        else{
+            console.log("No such property exists in this object.");
+        }
+    }
+
+    let myDog = {
+        name : "Neny",
+        breed : "Schitzu",
+        legs : 4,
+        friend : "Everyone"
+    }
+    getValue(myDog, "breed");
+    getValue(myDog, "horns");
+    */
+
+    // Nested Objects
+    /*
+    let myHome = {
+        inside: {
+            livingRoom : "TV",
+            kitchen : "Wife",
+            "my Room" : {
+                mirror : "Huge",
+                bed : "Messy",
+                cupboard : {
+                    locker : {
+                        innerLocker : "No money",
+                        "outer Locker" : "Ancient Coins"
+                    },
+                    general : "Clothes"
+                }
+            }
+        },
+        outside: {
+            garden : {
+                plants: "Tulsi",
+                trees: "Neem"
+            },
+            garrage : "Car"
+        }
+    }
+    */
+    
+    // Accessing property from a nested object
+    /*
+    console.log(myHome.inside["my Room"].cupboard["locker"]["outer Locker"]);
+    */
+
+    // Complex Objects
+    /*
+    garden = {
+        plants: ["Rose", "Mogra", "Tulsi", "Money Plant"],
+        trees: {
+            neem : ["Meetha", "Bitter"],
+            "other trees" : ["Champa", "Asopalav"]
+        }
+    }
+    */
+
+    // Accessing a property from complext objects
+    /*
+    console.log(garden.trees["other trees"][1]);
+    */
+
+    // Warmup - 1: Write code that logs on the console: 'cd' by accessing the following object:
+    /*
+    let myCollections = [
+        {
+            "artist":"2 unlimited",
+            "title":"no limit",
+            "release_year":1991,
+            "formats":[
+                "cassate",
+                "cd",
+                "mp3",
+                "youtube"
+            ],
+            "genre":"rap"
+        },
+
+        {
+            "artist":"Kungs",
+            "title":"this girl",
+            "release_year":2016,
+            "formats":[
+                "mp3",
+                "youtube"
+            ],
+            "genre":"remix"
+        }
+    ]
+
+    // Write your code here
+    
+    */
+
+    // Warmup - 2: Write a code to access "rose" from the given array:
+    /*
+    let myGarden = [
+        {
+            type: "potted plants",
+            plants: [
+                "tulip",
+                "jasmine",
+                "rose"
+            ]
+        },
+        {
+            type: "trees",
+            plants: [
+                "neem",
+                "mango",
+            ]
+        }
+    ]
+
+    // Write your code here
+
+    */
+
+    // Coding Challenge
+    /*
+    var collection = {
+        "2548" : {
+            "album" : "Slippery When Wet",
+            "artist" : "Bon Jovi",
+            "tracks" : [
+                "Let It Rock",
+                "You Give Love a Bad Name"
+            ]
+        },
+        "2468" : {
+            "album" : "1999",
+            "artist" : "Prince",
+            "tracks" : [
+                "1999",
+                "Little Red Corvette"
+            ]
+        },
+        "1245" : {
+            "artist" : "Robert Palmer",
+            "tracks" : [ ]
+        },
+        "5439" : {
+            "album" : "ABBA Gold"
+        }
+    }
+
+    function updateRecords(id, prop, value){
+
+        return collection;
+    }
+
+    // Write a function (updateRecords), where user can pass id (eg. "2548"), property (eg. "artist") and value (eg. "MJ"), that updates the value of the property of the given id in the collection and return the updated collection. If user passes the empty string as value, the function should completely delete that property. If the property is an array then the function should just add the value at the end of that property's array.
+    
+    Test Cases:
+    updateRecords(5439, "album", "The Visitors");
+    updateRecords(2548, "album", "");
+    updateRecords(5439, "artist", "ABBA");
+    updateRecords(2468, "tracks", "Lady Cab Driver");
+    
+
+    
+    // Coding Challenge
+    */
+    /*
+    myObject = {
+        Hello : "World",
+        Good : "Bye"
+    }
+    // delete myObject["Hello"];    OR
+    delete myObject.Hello;
+    console.log(myObject);
+    */
+
+    // Loops: while, for, do while
+    /*
+    let i = 0;
+    while (i < 5){
+        console.log("Hello Rasesh!");
+        console.log("how were your exams?");
+        i++;
+    }
+    */
+
+    // for loop
+    /*
+    // let i;
+    for(let i = 0; i < 5; i++){
+        console.log("Hello Rasesh!");
+        console.log("how were your exams?");
+    }
+    */
+
+    // do while
+    /*
+    let i = 6;
+    do{
+        console.log("Hello Rasesh!");
+        console.log("how were your exams?");
+    }while(i < 5);
+    */
+
+    // Create a user-defined array (First ask an integer from user - that will be the length of the array then, ask that many numbers from user and create an array consisting of those numbers.)
+    // let a = Number(prompt("Enter a number:"));
+</script>
+</html>
