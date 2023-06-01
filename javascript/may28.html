@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Create a user-defined array (First ask an integer from user - that will be the length of the array then, ask that many numbers from user and create an array consisting of those numbers.)
+    /*
+    arr = [];
+    len = Number(prompt("Enter length:"));
+    alert("Enter that many numbers now!");
+    for(let i = 0; i < len; i++){
+        n = Number(prompt());
+        arr.push(n);
+    }
+    // alert(arr);
+    console.log(arr);
+    */
+
+    // Ask 9 numbers from user and create a 3x3 array from them.
+    /*
+    Example:
+    Enter 9 numbers:
+    1,2,3,4,5,6,7,8,9
+    Output:
+    [[1,2,3], [4,5,6], [7,8,9]]
+    */
+
+    // Create an nxn user-defined array where 'n' to be taken by the user.
+
+    let x, i = 0;
+    while (i < 20){
+        // x = Math.random()       // generates a random fraction in the interval [0, 1)
+        // x = Math.random()*10       // generates a random fraction in the interval [0, 10)
+        // x = Math.random() + 5       // generates a random fraction in the interval [5, 6)
+        // x = (Math.random()*10) + 15       // generates a random fraction in the interval [15, 25)
+        x = Math.floor((Math.random()*17) + 13)       // generates a random integer in the interval [13, 30)
+        console.log(x);
+        i++;
+    }
+
+    // generate a random number between 0 to 10
+    /*
+    smallest: 0           *10      0
+    largest: 0.9999999    *10      9.999999999
+    */
+
+    // generate random numbers between 5 to 6
+    /*
+    smallest: 0         +5    5
+    largest: 0.999999   +5    5.9999999
+    */
+
+    // generate random numbers between 15 to 25
+    /*
+    smallest: 0                 15
+    largest: 0.999999           24.999999
+    */
+
+    // generate random integers between 13 to 30
+
+    // HW
+    // create a gaming simulation where two users (both computers) will roll a pair of dice. Score of each user is the total on both the dice. Do this 20 times & print the final score & declare who has got the higher score.
+
+    // HW
+    options = ["rock", "paper", "scissors"]
+    // create a simulation in which user & computer will play 20 turns. In each turn you need to take an input from user (either rock, paper or scissors) and create a random guess by computer. If computer wins, increase the score of computer by 1 and if user wins, do the same with user's score. After 20 turns, display the final score & declare the winner.
+</script>
+</html>
