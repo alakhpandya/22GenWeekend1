@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    'use strict';
+    // Some useful built in functions
+    // parseInt() & parseFloat()
+    /*
+    let a = "35", a2 = "14.56";
+    let b = parseInt(a);
+    let c = Number(a);
+    let d = parseFloat(a2);
+    let e = Number(a2);
+    // console.log(typeof(a));
+    // console.log(typeof(b));
+    // console.log(typeof(c));
+    // console.log(d);
+    // console.log(typeof(d));
+    console.log(e);
+    console.log(typeof(e));
+    
+    let b1 = "100011", b2 = "756";
+    let d1 = parseInt(b1, 2), d2 = parseInt(b2, 8);
+    console.log(d1);
+    console.log(d2);
+    // e = parseInt(b2, 16);
+    // console.log(e);
+    */
+
+    // Creating functions
+/*
+    function fName(){
+        console.log("fName called...");
+    }
+
+    // Arrow Function
+    // let
+    var fName = () => {
+        console.log("fName called...");
+    }
+    // const
+    fName();
+
+    // Write a function that takes an integer as argument & returns its cube. Write a main program that an integer from user and pass it to the function and, print whatever the function returns.
+
+    // function cube(n){
+    //     return n * n * n;
+    // }
+
+    let cube = (n) => {
+        return n * n * n;
+    }
+    console.log(cube(5));
+
+    // Write a function that takes 2 arguments (integers) & returns their average. Write a main program that takes two integers from user and pass them to the function and, print whatever the function returns.
+
+    // function avg(a, b){
+    //     return (a + b)/2;
+    // }
+
+    const avg = (a, b) => {
+        return (a + b)/2;
+    }
+    console.log(avg(5, 10));
+*/
+
+    /*
+    const fName = () => console.log("fName called...");
+    fName();
+
+    const cube = (n) => n*n*n;
+    console.log(cube(5));
+
+    const avg = (a, b) => (a + b)/2;
+    console.log(avg(10, 15));
+    */
+
+    // 
+
+    function cube(n){
+        return n * n * n;
+    }
+
+    let arr = [2, 3, 5, 8, 10, 12, 15];
+    /*
+    let newArr = []
+    // Write your code here
+    for(let i = 0; i < arr.length; i++){
+        newArr.push(cube(arr[i]));
+    }
+    */
+    let newArr = arr.map(cube);
+    console.log(newArr);
+    // o/p: cubes of every number of arr
+
+    // Create a function that returns factorial of the integer given in its argument. Using map and a given array of integers, create a new array that comprises of factorials of the given array.
+
+    function avg(arr){
+        let average, sum = 0;
+        for(let i = 0; i < arr.length; i++){
+            sum += arr[i];
+        }
+        average = sum/arr.length;
+        return average;
+    }
+    function aboveAverage(x){
+        return x > average;
+    }
+    let sensorData = [-10, -7, -14, -12, 0, 3, -4, -18, -12, -9, 2, 1, -3, -15];
+    let average = avg(sensorData);
+    // Use the above function 'aboveAverage' and the array 'sensorData' to create a new array 'highTempPoints' that consists of those points which are having temperature higher than the average temperature.
+    let highTempPoints = [];
+    // Write your code here
+</script>
+</html>
