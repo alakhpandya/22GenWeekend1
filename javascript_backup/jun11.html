@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body" style="background-color: black;">
+    <!-- comments -->
+    <h1 id="title"></h1>
+    <button onclick="document.getElementById('title').innerText = 'Welcome to JS!'">Show</button>
+    <br>
+    <a href="#" onclick="document.getElementById('date-box').innerText = Date()">See today's date</a> <span id="date-box"></span>
+
+    <h2 id="weekend">Happy Sunday!</h2>
+    <!-- inline javascript -->
+    <button onclick="document.getElementById('weekend').style.color = 'red'">Style it!</button>
+
+    <h2 id="joy">After this class we have practice session of javascript for two hours</h2>
+    <button onclick="document.getElementById('joy').style.display = 'none'">Surprise!</button>
+
+    <button onclick="print()">Print this page</button>
+
+    <br> <br>
+    <img id="bulb-img" src="/images/bulb_off.png" width="200px" alt="">
+    <br> <br>
+    <button onclick="document.getElementById('bulb-img').src = '/images/bulb_on.png'; document.getElementById('body').style.backgroundColor = 'yellow'">ON</button>
+    <button onclick="document.getElementById('bulb-img').src = '/images/bulb_off.png'; document.getElementById('body').style.backgroundColor = 'black'">OFF</button>
+
+    <p id="answer"></p>
+    <button onclick="document.write('Answer')">show answer</button>
+</body>
+
+<!-- External Javascript -->
+<script src="jun11.js"></script>
+
+<!-- Internal Javascript -->
+<script>
+    // comments
+    /*
+    Multi line comments
+    */
+    // a = 10;
+    // How to get output in js:
+    /*
+    1. In an html element (using innerText/innerHTML)
+    2. print()
+    3. using alert()
+        a = 20
+        b = 30
+        c = a + b
+        alert(c)
+    4. document.write()
+    5. logging on the console
+    */
+
+    // normal copy: 250kb, min: 200kb
+    // "use strict";
+    /*
+    a = 20;
+    b = 30;
+    c = a + b;
+    console.log(c);
+    // first-var = 5;
+    // first var = 5;
+    first_var = 5;
+    firstVar1 = 5;
+    first$var2 = 5;
+    // 2nd_var = 10
+    _2nd_var = 20;
+    $3rd_var = 30;
+    */
+
+    /*
+    var a = 10;
+    var b = 30.5;
+    var c = "JavaScript", d = '2';
+    console.log(typeof(a));
+    console.log(typeof(b));
+    console.log(typeof(c));
+    console.log(typeof(d));
+    */
+
+    // ECMA Script : es6
+    var room_length = 20;
+    let a = 10, b = 20;
+    // let c = 30;
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    a = 50;
+    console.log(a);
+    // let b = 60;
+    let d = 55;
+
+    // var room_length = 30;
+    let room_length = 30;
+    // var c = 100;
+
+    // In the next class: other differences between let & var
+</script>
+</html>
