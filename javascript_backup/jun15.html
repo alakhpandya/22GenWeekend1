@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Global variables
+    /*
+    let a = 10;
+    var b = 20;
+    
+    {
+        console.log(a);
+        console.log(b);
+        var c = 30;
+        let d = 40;
+    }
+    console.log(c);
+    let d = 41;
+    console.log(d);
+    {
+        let d = 32;
+        console.log(d);
+        d++;
+    }
+    console.log(d);
+    */
+
+    // const PI = 3.14;
+    // PI++;            // Not allowed
+
+    // Not Allowed
+    /*
+    const PI;
+    PI = 3.14;
+    */
+
+    // Creating Functions
+    /*
+    function test1(){
+        console.log("Testing the function...");
+    }
+    test1();
+    
+    function test2(a, b){
+        console.log((a * b )/ 2);
+    }
+    test2(5,6);
+
+    function test3(a, b){
+        let c = (a / b) * 2;
+        return c;
+    }
+    let a = test3(15, 3);
+    console.log(a);
+    */
+
+    // Arithmetic Operators: +, -, *, /, %, **, ++, --
+    /*
+    let a = 5;
+    // console.log(a ** 2);
+
+    let b = "15", c = "2";
+    // console.log(b + c);
+
+    let d = "Hello", e = "World", f = 5;
+    // console.log(d + e);
+    // console.log(d + f);
+
+    d += e; // d = d + e
+    console.log(d);
+    */
+
+    // Logical Operators: &&, ||, !
+    // let a = 5, b = 7, c = 10;
+    // console.log(a > b);
+    // console.log(c > b);
+
+    // console.log(a > b || c > b);
+    // console.log(a > b && c > b);
+    // console.log(! c > b && a > b);
+
+    // typeof()
+    /*
+    let a = 5, b = "5", c = true, d = 3.5, e;
+    console.log(typeof(a));
+    console.log(typeof(d));
+    console.log(typeof(b));
+    console.log(typeof(c));
+    console.log(typeof(e));
+    */
+
+    // Comparision Operators/Relational Operators/Conditional Operators/Conditions:
+    // <, >, <=, >=, !=, ==, ===, !==, ?
+    /*
+    let a = 5, b = "5";
+    // console.log(a == b);
+    // console.log(a === b);
+
+    console.log(a != b);
+    console.log(a !== b);
+    */
+    // Taking input in js:
+    /*
+    let marks = Number(prompt("Enter marks:"));
+    // console.log(marks);
+    // console.log(typeof(marks));
+    // console.log(marks > 35 ? "Very Good" : (marks > 25 ? "Good" : "Not Good"));
+    console.log(marks > 35 ? "Very Good" : marks > 25 ? "Good" : "Not Good");
+    */
+
+    // Assignment operators: =, +=, -=, *=, /=, %=, **=, 
+    /*
+    let a, b = 8, c = 16, d = 2, e = 5;
+    a = "Tea";
+    // "Tea" = a;   Wrong
+    a = 5;
+    // 5 = a;       Wrong in programming, correct in maths
+    a = b ** d / c + e;
+    console.log(a);
+    // Precedence: Bracket, power, multiply/divide, add/subtract
+    */
+    
+    // Strings
+    // let a = "I don't have\tenough time.";
+    // let b = 'I don\'t have enough time.';
+    // other escape sequence characters: \n, \t
+    // console.log(a.length);
+    // console.log(a.toUpperCase());
+    // a = a.toUpperCase();
+    // console.log(a);
+
+    // string slicing
+    // console.log(a.slice(2, 20));
+    // console.log(a.slice(3, -4));
+    // console.log(a.slice(-20, -6));
+    // console.log(a.slice(-6, -20));
+
+    // console.log(a.substring(2, 20));
+
+    // console.log(a.substr(3, 11));
+    // console.log(a.substr(-20, 10));
+
+    // console.log(a.indexOf('g'));
+    // console.log(a.indexOf('e'));
+    // console.log(a.indexOf('enough'));
+    // console.log(a.lastIndexOf('e'));
+    // console.log(b.length);
+
+    // console.log(a.charAt(11));
+    // console.log(a.charAt(12));
+    // console.log(a.charAt(13));
+
+    // console.log(a.charAt(9));
+    // console.log(a.charCodeAt(9));
+    // console.log(a.charAt(9));
+    // console.log(a.charCodeAt(9));
+
+    // a = a.replace("don't", 'do');
+    // console.log(a);
+
+    /*
+    let c = "                Happy Birthday!                                       ";
+    c = c.trim();
+    console.log(c.length);
+    console.log(c);
+    */
+
+    /*
+    let date = prompt("Enter Your Date of birth (dd):");
+    let month = prompt("month (mm):");
+    let year = "2000";
+
+    let dob = date.padStart(2, '0') + "/" + month.padStart(2, '0') + "/" + year;
+    alert(dob);
+    */
+
+    // switch case
+    let a, b, op, ans;
+    a = Number(prompt("A:"));
+    b = Number(prompt("B:"));
+    op = prompt("Operation (+, -, * or /):");
+    switch(op){
+        case '+':
+            ans = a + b;
+            break;
+        case '-':
+            ans = a - b;
+            break;
+        case '*':
+            ans = a * b;
+            break;
+        case '/':
+            ans = a / b;
+            break;
+        default:
+            ans = "Invalid operation.";
+    }
+    alert(ans);
+    console.log(op);
+</script>
+</html>
