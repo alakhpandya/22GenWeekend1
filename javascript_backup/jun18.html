@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // if-else
+    /*
+    let n = 15;
+    if (n > 0){
+        console.log("Positive");
+    }
+    else if (n == 0){
+        console.log("Zero");
+    }
+    else{
+        console.log("Negative");
+    }
+    */
+
+    // Loops: while, for, do-while
+    /*
+    "use strict";
+
+    let n = 7;
+    let i = 11;       // loop control variable
+    
+    while (i <= 10){
+        console.log(n * i);
+        i++;
+    }
+    */
+    /*
+    do{
+        console.log(n * i);
+        i++;
+    }while (i <= 10);
+    */
+
+    // for loop
+    /*
+    for(i = 1; i <= 10; i++){
+        console.log(n * i);
+    }
+    */
+
+    // Write a javascript function that takes an integer as argument and returns its number of digits. Also write a main program that asks an integer from user (prompt) and pops up (alert) the number of digits using that function.
+
+    /*
+    function countDigits(n){
+        let count = 0;
+        do{
+            n = Math.floor(Math.abs(n)/10);
+            count++;
+        }while (n != 0);
+        return count;
+    }
+
+    let n = Number(prompt("n:"));
+    let digits = countDigits(n)
+    alert(digits);
+    */
+
+    /*
+    PAR: 10
+    strokes     Score
+    1           Hole In One
+    2 - 7       Eagle
+    8 or 9      Birdy
+    10          PAR
+    11          Bogey
+    12 or 13    Double Bogey
+    >13         Go Home
+    Ask par from user, ask strokes from user in the main program. Create a function that takes par & strokes as arguments and returns the score. Log the score on the console through main program.
+    */
+    
+    let myArray = ["Grapes", "Kiwi", "Cherries", "Berries", "Banana"];
+    // console.log(myArray);
+    // console.log(myArray[0]);
+
+    // IMP array methods:
+    myArray.push("Mango");
+    console.log(myArray);
+
+    myArray.pop();
+    console.log(myArray);
+
+    myArray.shift();
+    console.log(myArray);
+
+    myArray.unshift("Mango");
+    console.log(myArray);
+
+    myArray[1] = "Peach";
+    console.log(myArray);
+
+    let yourArray = [
+        ["Grapes", "Kiwi", "Cherries", "Berries", "Banana"],
+        ["Potato", "Tomato", "Cabbage"],
+        ["Ahmedabad", "Surat", "Jamnagar"],
+        [
+            [1, 2, "Mango"],
+            [3.5, 4, "Pineapple"]
+        ]
+    ];
+
+    console.log(yourArray[3][1][2]);
+
+    // let scores = ["Hole in One", "Eagle"]
+</script>
+</html>
