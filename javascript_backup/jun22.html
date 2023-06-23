@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    let result = {"Physics" : 92, "C" : 95, "JavaScript" : 100};
+    let bollywoodHero = {
+        cap : "Hat",
+        shirt : "Yellow",
+        "neck tie" : "Red",
+        'trousers' : "Green",
+        "2shoes" : "White",
+        brain : false
+    }
+
+    // Accessing value of a property from an object
+    console.log(result.Physics);
+
+    console.log(bollywoodHero.cap);
+    console.log(bollywoodHero.trousers);
+    // console.log(bollywoodHero[0]);
+    console.log(bollywoodHero["neck tie"]);
+    console.log(bollywoodHero['brain']);
+
+    // Nested object
+    let myHome = {
+        house : {
+            "drawing room" : "TV",
+            "kitchen" : "wife",
+            "upper floor" : {
+                "living room" : {
+                    cupboard : {
+                        wardrobe : "Clothes",
+                        locker : {
+                            "outer locker" : "ancient coins",
+                            "safe box" : "Empty"
+                        }
+                    },
+                    furniture : "table"
+                },
+                "bedroom" : {
+                    "wall" : "mirror",
+                    "bed" : "messy"
+                }
+            }
+        },
+        "compound" : {
+            "garden" : {
+                "trees" : 2,
+                "other plants" : 10
+            }
+        }
+    }
+    // console.log(myHome.house["upper floor"]["living room"]["cupboard"].locker["outer locker"]);
+    console.log(myHome["house"]["upper floor"]["living room"]["cupboard"]["locker"]["outer locker"]);
+
+    // Complex Object
+    myHome = {
+        house : {
+            "drawing room" : "TV",
+            "kitchen" : "wife",
+            "upper floor" : {
+                "living room" : ["table", {
+                    cupboard : {
+                        wardrobe : ["Clothes", "Photo Albums", "Cosmetics", "Perfume"],
+                        locker : {
+                            "outer locker" : "ancient coins",
+                            "safe box" : "Empty"
+                        }
+                    },                    
+                }, "refridgerator", "show-case"],
+                "bedroom" : {
+                    "wall" : "mirror",
+                    "bed" : "messy"
+                }
+            }
+        },
+        "compound" : {
+            "garden" : {
+                "trees" : 2,
+                "other plants" : 10
+            }
+        }
+    }
+    console.log(myHome["house"]["upper floor"]["living room"][1]["cupboard"]["wardrobe"][3]);
+
+    console.log(result);
+    result["C"] = 99;
+    console.log(result);
+    result["Python"] = 100;
+    console.log(result);
+    delete result["Physics"];
+    console.log(result);
+    */
+
+    // Write a code to access "rose" from the given array:
+    /*
+    let myGarden = [
+        {
+            type: "potted plants",
+            plants: [
+                "tulip",
+                "jasmine",
+                "rose"
+            ]
+        },
+        {
+            type: "trees",
+            plants: [
+                "neem",
+                "mango",
+            ]
+        }
+    ]
+    */
+    
+    // Write a code to show the number of formats in which the title 'this girl' is available
+    /*
+    let myCollections = [
+        {
+            "artist":"2 unlimited",
+            "title":"no limit",
+            "release_year":1991,
+            "formats":[
+                "cassate",
+                "cd",
+                "mp3",
+                "youtube"
+            ],
+            "genre":"rap"
+        },
+        {
+            "artist":"Kungs",
+            "title":"this girl",
+            "release_year":2016,
+            "formats":[
+                "mp3",
+                "youtube"
+            ],
+            "genre":"remix"
+        }
+    ]
+    // arr = [1, "a", "q", "abcd"]
+    // console.log(arr.length);
+    console.log(myCollections[1]["formats"].length);
+    */
+    /*
+    let bollywoodHero = {
+        cap : "Hat",
+        shirt : "Yellow",
+        "neck tie" : "Red",
+        'trousers' : "Green",
+        "2shoes" : "White",
+        brain : false
+    };
+    // console.log(bollywoodHero["tail"]);
+
+    console.log(bollywoodHero.hasOwnProperty("tail"));
+    console.log(bollywoodHero.hasOwnProperty("2shoes"));
+    */
+
+    // Write a function that takes two arguments- obj & property and logs on the console the value of that property if it exists in the object otherwise, logs the message 'Sorry, this object does not own the said property'
+    /*
+    function propertyChecker(obj, property){
+        // write your code here
+        if (obj.hasOwnProperty(property)){
+            console.log(obj[property]);
+        }
+        else{
+            console.log('Sorry, this object does not own the said property');
+        }
+    }
+
+    let bollywoodHero = {
+        cap : "Hat",
+        shirt : "Yellow",
+        "neck tie" : "Red",
+        'trousers' : "Green",
+        "2shoes" : "White"
+    };
+    propertyChecker(bollywoodHero, "shirt");    // This should log: "Yellow" in the console
+    propertyChecker(bollywoodHero, "brain");    // This should log: 'Sorry, this object does not own the said property'
+    */
+    /*
+    let  a = parseFloat(prompt("Enter the first number:"));
+    let b = parseFloat(prompt("Enter the second number:"));
+    let operation = prompt("Enter the operation symbol (+, -, *, /):");
+    // Look up table
+    let result = {
+        "+" : a + b,
+        "-" : a - b,
+        "*" : a * b,
+        "/" : a / b
+    };
+    console.log("Result: " + result[operation]);
+    console.log(result);
+    */
+
+    // Coding Challenge
+var collection = {
+    "2548" : {
+        "album" : "Slippery When Wet",
+        "artist" : "Bon Jovi",
+        "tracks" : [
+            "Let It Rock",
+            "You Give Love a Bad Name"
+        ]
+    },
+    "2468" : {
+        "album" : "1999",
+        "artist" : "Prince",
+        "tracks" : [
+            "1999",
+            "Little Red Corvette"
+        ]
+    },
+    "1245" : {
+        "artist" : "Robert Palmer",
+        "tracks" : [ ]
+    },
+    "5439" : {
+        "album" : "ABBA Gold"
+    }
+}
+
+function updateRecords(id, prop, value){
+    // Your code goes here
+    
+    return collection;
+}
+
+// Write a function (updateRecords), where user can pass id (eg. "2548"), property (eg. "artist") and value (eg. "MJ"), that updates the value of the property of the given id in the collection and return the updated collection. If user passes the empty string as value, the function should completely delete that property. If the property is an array then the function should just add the value at the end of that property's array.
+/*
+Test Cases:
+updateRecords(5439, "album", "The Visitors");
+updateRecords(2548, "album", "");
+updateRecords(5439, "artist", "ABBA");
+updateRecords(2468, "tracks", "Lady Cab Driver");
+*/
+
+</script>
+</html>
