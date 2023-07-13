@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // a = "231";
+    // b = parseInt(a);
+    // c = Number(a);
+    // console.log(typeof(a));
+    // console.log(typeof(b));
+    // console.log(typeof(c));
+
+    // a = "11011";
+    // b = parseInt(a, 2);
+    // console.log(b);
+
+    // c = "547";
+    // d = parseInt(c, 8);
+    // console.log(d);
+
+    /*
+    p = "23.34";
+    q = parseFloat(p);
+    r = Number(p)
+
+    console.log(typeof(p));
+    console.log(typeof(q));
+    console.log(typeof(r));
+    */
+
+    /*
+    Number  Floor   Ciel
+    4.2     4       5
+    7.9     7       8
+    -3.3    -4      -3
+    -6      -6      -6
+    */
+    /*
+    a = -4.3
+    b = Math.floor(a)
+    c = Math.ceil(a)
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    */
+    
+    // const a = 45;
+    // a = 55;
+    // const b;
+    // b = 37;
+
+    /*
+    const myArray = [31,25,30,14];
+    Object.freeze(myArray);
+    myArray[2] = 100;
+    // myArray = [31, 25, 100, 14];
+    console.log(myArray);
+    // console.log(typeof(myArray));
+    
+    const yourObject = {
+        name : "You",
+        height : "Your height",
+        vehicle : "Your vehicle"
+    }
+    Object.freeze(yourObject);
+    yourObject["vehicle"] = "My vehicle";
+
+    console.log(yourObject);
+    */
+    
+    // Create an arrow function that takes an object as argument & freeze it.
+    /*
+    let freezeIt = (obj) => {
+        Object.freeze(obj);
+    }
+
+    const yourObject = {
+        name : "You",
+        height : "Your height",
+        vehicle : "Your vehicle"
+    }
+    freezeIt(yourObject);
+    yourObject["vehicle"] = "My vehicle";
+
+    console.log(yourObject);
+    */
+
+    // Exception Handling
+    /*
+    "use strict";
+    const myArray = [31,25,30,14];
+    Object.freeze(myArray);
+
+    try{
+        myArray[2] = 100;
+    }
+    catch(e){
+        console.log(e);
+    // catch{
+        console.log("Sorry, this is not possible");
+    }
+    finally{
+        console.log(myArray);
+    }
+
+    console.log("Something");
+    */
+
+    // default argument
+    /*
+    function temp(a, b = 0){
+        return Math.pow(a, 2) + Math.pow(b, 2)
+    }
+    
+    // let ans = temp(5)
+    let ans = temp(5, 6)
+    console.log(ans);
+    */
+
+    // Variable length argument
+    /*
+    function avg(...args){
+        // console.log(args);
+        sum = 0
+        for(let i = 0; i < args.length; i++){
+            sum += args[i];
+        }
+        return sum/args.length
+    }
+    console.log(avg(10, 20, 30, 40))
+    */
+
+    /*
+    let myArray = ['Jan', 'Feb', 'Mar', 'Apr'];
+    let yourArray = myArray;    // shallow copy
+    let ourArray = [...myArray];    // Deep copy
+    myArray.push('May');
+    console.log(yourArray);
+    console.log(ourArray);
+    */
+
+    // Destructuring assignment
+    let result = {
+        physics : 84,
+        maths : 92,
+        programming : 96,
+        javaScript : 100
+    }
+
+    // physics = result["physics"]
+    // maths = result["maths"]
+    // let {physics, maths, programming, javaScript} = result;
+    // let {physics : subjec1, maths : subject2, programming : subjec3, javaScript : subjec4} = result;
+    // console.log(physics);
+    // console.log(subjec1);
+
+    /*
+    let {maths, javaScript} = result;
+    console.log(maths);
+    console.log(javaScript);
+    */
+
+    /*
+    let {maths : Mathematics, javaScript : JS} = result;
+    // console.log(maths);
+    // console.log(javaScript);
+    console.log(Mathematics);
+    console.log(JS);
+    */
+
+    const AVG_TEMPERATURES = {
+        today : 37,
+        tomorrow : 39.5,
+    };
+
+    // Create an arrow function that will take out tomorrow's temperature from AVG_TEMPERATURES using destructuring assignment. Name that function as 'GetTempOfTom'
+    
+    // function GetTempOfTom(obj){
+    //     let {tomorrow} = obj;
+    //     return tomorrow;
+    // }
+
+    function GetTempOfTom({tomorrow}){
+        return tomorrow
+    }
+
+    console.log(GetTempOfTom(AVG_TEMPERATURES));
+</script>
+</html>
