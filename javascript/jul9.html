@@ -92,25 +92,30 @@
     */
 
     // Exception Handling
-    /*
+/*
     "use strict";
     const myArray = [31,25,30,14];
     Object.freeze(myArray);
+
+    // myArray[2] = 100;
+
 
     try{
         myArray[2] = 100;
     }
     catch(e){
         console.log(e);
-    // catch{
-        console.log("Sorry, this is not possible");
     }
+    // catch{
+    //     console.log("Sorry, this is not possible");
+    // }
     finally{
-        console.log(myArray);
+        console.log("Finally Executed.");
     }
 
+    console.log(myArray);
     console.log("Something");
-    */
+*/
 
     // default argument
     /*
@@ -156,6 +161,7 @@
     // physics = result["physics"]
     // maths = result["maths"]
     // let {physics, maths, programming, javaScript} = result;
+    // let {programming, maths} = result;
     // let {physics : subjec1, maths : subject2, programming : subjec3, javaScript : subjec4} = result;
     // console.log(physics);
     // console.log(subjec1);
@@ -173,7 +179,7 @@
     console.log(Mathematics);
     console.log(JS);
     */
-
+/*
     const AVG_TEMPERATURES = {
         today : 37,
         tomorrow : 39.5,
@@ -187,9 +193,10 @@
     // }
 
     function GetTempOfTom({tomorrow}){
-        return tomorrow
+        return tomorrow;
     }
 
     console.log(GetTempOfTom(AVG_TEMPERATURES));
+    */
 </script>
 </html>

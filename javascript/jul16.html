@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Write a program at the designated place in order to get maximum temperature of tomorrow from the nested object 'LOCAL_FORECAST':
+
+    /*
+    const LOCAL_FORECAST = {
+        today : { min: 22, max: 38.5},
+        tomorrow : { min: 18.5, max: 34}
+    };
+
+    function getMaxOfTomorrow(forecast){
+        "use strict";
+
+        // let {tomorrow} = forecart;
+        // let {max : maxOfTomorrow} = tomorrow;
+
+        let {tomorrow : {max : maxOfTomorrow}} = forecast;
+
+        return maxOfTomorrow;
+    }
+    console.log(getMaxOfTomorrow(LOCAL_FORECAST));
+    */
+
+    // Destructuring from arrays
+    /*
+    let myArray = [21, 66, 45, 98, -34, 0, 55];
+    let a = myArray[0]      without using destructuring
+    let [a, b, c, d, e, f, g] = myArray;
+    console.log(g);
+
+    let [a, b] = myArray;
+    console.log(a);
+    console.log(b);
+
+    let [a, b, , , c] = myArray;
+    console.log(c);
+
+    Using destructuring assignment with the rest operator (args)
+    let [a, b, ...yourArray] = myArray;
+    console.log(a);
+    console.log(b);
+    let [, , ...yourArray] = myArray;
+    console.log(yourArray);
+    */
+
+    // swapping the variables in an array using destructuring
+    /*
+    let a = 12, b = 53, c = 105;
+    // let myArray = [a, b];   // [12, 53]
+    // [b, a] = myArray;
+    [b, c, a] = [a, b, c];
+    */
+
+    // Using destructuring assignment to pass an object as a function's argument
+    /*
+    const stats = {
+        max : 56.75,
+        standard_deviation : 4.34,
+        median : 34.54,
+        mode : 23.87,
+        min : -0.75,
+        average : 35.85,
+        type: "Normal Distribution"
+    };
+
+    // Finding range of this distribution
+    
+    function findRange( obj ){
+        let {max, min} = obj;
+        let range = max - min;
+        return range
+    }
+    
+
+    function findRange( {max, min} ){
+        return max - min;
+    }
+    
+    let findRange = ( {max, min} ) => max - min;
+    console.log(findRange(stats));
+    */
+
+    /*
+    json: JavaScript Object Notation
+    */
+
+    // Template Literals
+
+    myString = 'Hello';
+    yourString = "World";
+    // backticks
+    ourString = `How are you?`;
+
+    // 1
+    s1 = `He said to me "I'm not going to work today..."`;
+
+    // 2
+    s2 = `TV is also known as 'idiot box'.
+But in fact TV is not stupid, the person who watches it is.`
+    // console.log(s2);
+
+    // 3
+
+customers = [
+    {
+        cust_name: "Keyur"
+
+    },
+    {
+        cust_name: "Prachi"
+    }
+]
+
+// cust_name, total_lim, last_trans, charges, total_due, min_due, due_date, available_lim
+s3 = `Hello ${cust_name}!
+Thanks for continuing your trust in our bank!
+Here is the overview of your account:
+
+Total limit: 1000000/-
+Last Transactions: 150000/-
+Extra Charges = 1000/-
+Total Amount Due: 151000/-
+Minimum Amount Due: 15100/-
+Due Date: 20/07/2023
+Avaliable Limit: 849000/-
+
+Feel free to get in touch for any queries,
+Regards,
+VPVPI bank`
+
+console.log(s3);
+</script>
+</html>
