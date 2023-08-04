@@ -112,26 +112,51 @@ But in fact TV is not stupid, the person who watches it is.`
 
 customers = [
     {
-        cust_name: "Keyur"
-
+        cust_name: "Keyur",
+        total_lim: 1000000,
+        last_trans: 150000,
+        charges: 1000,
+        due_date: "15 Aug, 2023",
     },
     {
-        cust_name: "Prachi"
+        cust_name: "Prachi",
+        total_lim: 1500000,
+        last_trans : 50000,
+        charges : 1500,
+        due_date : `30/09/2023`
+    },
+    {
+        cust_name: "Riddh",
+        total_lim: 2000000,
+        last_trans : 250000,
+        charges : 2000,
+        due_date : `31/07/2023`
     }
 ]
 
 // cust_name, total_lim, last_trans, charges, total_due, min_due, due_date, available_lim
+sr_no = 2
+cust_name = customers[sr_no]["cust_name"]
+total_lim = customers[sr_no]["total_lim"]
+last_trans = customers[sr_no]["last_trans"]
+charges = customers[sr_no]["charges"]
+due_date = customers[sr_no]["due_date"]
+
+total_amount_due = last_trans + charges
+min_amount_due = total_amount_due * 0.1
+available_lim = total_lim - total_amount_due
+
 s3 = `Hello ${cust_name}!
 Thanks for continuing your trust in our bank!
 Here is the overview of your account:
 
-Total limit: 1000000/-
-Last Transactions: 150000/-
-Extra Charges = 1000/-
-Total Amount Due: 151000/-
-Minimum Amount Due: 15100/-
-Due Date: 20/07/2023
-Avaliable Limit: 849000/-
+Total limit: ${total_lim}/-
+Last Transactions: ${last_trans}/-
+Extra Charges = ${charges}/-
+Total Amount Due: ${total_amount_due}/-      // Last Transactions + Extra Charges
+Minimum Amount Due: ${min_amount_due}/-     // 10% of Total amount due
+Due Date: ${due_date}            
+Avaliable Limit: ${available_lim}/-       // Total limit - Total Amount Due
 
 Feel free to get in touch for any queries,
 Regards,
