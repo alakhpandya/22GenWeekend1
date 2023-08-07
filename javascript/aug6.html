@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="module">
+    /*
+    'use strict';
+    class Book{
+        constructor(author){
+            this._author = author;
+        }
+        // getter
+        get writer(){
+            return this._author;
+        }
+        // setter
+        set writer(newWriter){
+            this._author = newWriter;
+        }
+    }
+
+    let rdpd = new Book("Robert")
+    console.log(rdpd.writer);
+    rdpd.writer = "Naitik";
+
+    console.log(rdpd.writer);
+    */
+
+    // Export default
+    // import capitalize_first_and_last from '/single_export.js';
+    // import { oddCapitalize } from '/multiple_export.js';
+    import { oddCapitalize, evenCapitalize } from '/multiple_export.js';
+
+    let str = "hello world";
+    // console.log(str[0].toUpperCase());
+    // console.log(str.slice(1, -1));
+    // console.log(str[str.length - 1].toUpperCase());
+    // console.log(capitalize_first_and_last(str));
+
+    console.log(oddCapitalize(str));
+    console.log(evenCapitalize(str));
+</script>
+</html>
