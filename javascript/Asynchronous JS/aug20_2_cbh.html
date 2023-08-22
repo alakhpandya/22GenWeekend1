@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+    1. Receive Order                        2
+    2. Chop the vegetables                  4
+    3. add the masala, water, noodles and   1
+       vegetables to the bowl
+    4. Boil                                 3
+    5. take the plate                       1
+    6. prepare sandwich                     4
+    7. Serve the order                      1
+    */
+    
+    let order = (time) => {
+        console.log("Recieving Order...");
+        setTimeout(() => {
+            console.log("Order recieved");
+            cooking_function();
+        }, time);
+    }
+
+    // Call Back Hell
+    let cooking_function = () => {
+        console.log("Vegetables are being chopped...");
+        setTimeout(() => {
+            console.log("Vegetables are chopped, masala, water, noodles and vegetables are being added to the bowl");
+            setTimeout(() => {
+                console.log("Boiling...");
+                setTimeout(() => {
+                    console.log("Taking the plate...");
+                    setTimeout(() => {
+                        console.log("Sandwiches are being prepared");
+                        setTimeout(() => {
+                            console.log("Your dish is ready, just wait for 1 sec!");
+                            setTimeout(() => {
+                                console.log("Here's your maggie sanwich!");
+                            }, 1000)
+                        }, 4000)
+                    }, 1000)
+                }, 3000)
+            }, 1000)
+        }, 4000)
+    }
+
+    order(2000);
+</script>
+</html>

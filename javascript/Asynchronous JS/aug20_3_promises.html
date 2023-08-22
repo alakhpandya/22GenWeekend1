@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    1. Receive Order                        2
+    2. Chop the vegetables                  4
+    3. add the masala, water, noodles and   1
+       vegetables to the bowl
+    4. Boil                                 3
+    5. take the plate                       1
+    6. prepare sandwich                     4
+    7. Serve the order                      1
+    */
+    
+    // let is_open = true;
+    let is_open = false;
+
+    let order = (time, task) => {
+        return new Promise((resolve, reject) => {
+            if (is_open){
+                // resolve
+                setTimeout(() => {
+                    resolve(task());
+                }, time)
+            }
+            else{
+                // reject
+                reject(console.log("Sorry, the shop is closed."));
+            }
+        })
+    }
+
+    console.log("Recieving the order...");
+    order(2000, () => console.log("Order recieved, chopping the veggies..."))
+    
+    .then(() => {
+        return order(4000, () => console.log("Vegetables are chopped, masala, water, noodles and vegetables are being added to the bowl"));
+    })
+    
+    .then(() => {
+        return order(1000, () => console.log("Boiling..."))
+    })
+
+    .then(() => {
+        return order(3000, () => console.log("Taking the plate..."));
+    })
+
+    .then(() => {
+        return order(1000, () => console.log("Sandwiches are being prepared"));
+    })
+
+    .then(() => {
+        return order(4000, () => console.log("Your dish is ready, just wait for 1 sec!"));
+    })
+
+    .then(() => {
+        return order(1000, () => console.log("Here's your maggie sanwich!"));
+    })
+
+</script>
+</html>

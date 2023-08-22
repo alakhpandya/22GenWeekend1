@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    console.log("Req 1");   // open home page
+    console.log("Req 2");   // add to cart
+    setTimeout(() => {
+        console.log("Req 3");   // authenticate user name & password
+        setTimeout(() => {
+            console.log("Req 5");   // open my orders page
+        }, 2000)
+    }, 5000);
+    console.log("Req 4");   // open contact us page
+    
+    console.log("Req 6");   // logout
+</script>
+</html>
