@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 1</title>
+    <link rel="stylesheet" href="dom1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="containar">
+        <h1 id="heading">Favourite Movie Franchise</h1>
+
+        <button class="btn" id="btn-1">The Matrix</button>
+        <button class="btn blue-fonts">Star Wars</button>
+        <button class="btn">Harry Potter</button>
+        <button class="btn blue-fonts">Load of the Rings</button>
+        <button class="btn">Marvel</button>
+
+    </div>
+
+    <div class="social">
+        <!-- <span class="icon-box"><i class="fa-brands fa-facebook social-icon"></i></span>
+        <span class="icon-box"><i class="fa-brands fa-twitter social-icon"></i></span> -->
+    </div>
+</body>
+<script>
+    let new_movie = document.createElement('button');
+
+    new_movie.innerText = "X-men";
+
+    // let container = document.getElementsByClassName('containar');
+    // console.log(container);
+    // container[0].style.backgroundColor = 'Red';
+
+    let container = document.querySelector('.containar');
+    // console.log(container);
+
+    container.appendChild(new_movie);
+
+    new_movie.setAttribute('class', 'btn');
+    new_movie.setAttribute('id', 'last-movie');
+
+    let title = document.querySelector('h1');
+    console.log(title.getAttribute('id'));
+
+    // new_movie.setAttribute('class', 'blue-fonts');
+
+    console.log(new_movie.classList);
+    new_movie.classList.add('blue-fonts');
+    console.log(new_movie.classList);
+
+    // container.classList.remove('containar');
+    console.log(new_movie.classList.contains('btn'));
+    console.log(new_movie.classList.contains('containar'));
+
+    // showing all the attributes by their names
+    console.log(new_movie.attributes);
+
+    // Removing an element
+    let hp = document.getElementsByTagName('button');
+    hp[2].remove();
+
+    /*
+    create i tag
+    assign classes: fa-twitter, fa-brands, social-icon
+    create span
+    assign class: icon-box
+    append i to span
+    append span div
+    */
+    // let span = document.createElement('span');
+    // span.setAttribute('class', 'icon-box');
+    let social = document.querySelector('.social');
+    // social.append(span)
+    // span.innerHTML = '<i class="fa-brands fa-twitter social-icon"></i>'
+
+    social.innerHTML = `
+        <span class="icon-box"><i class="fa-brands fa-youtube social-icon"></i></span>
+        <span class="icon-box"><i class="fa-brands fa-twitter social-icon"></i></span>
+    `
+</script>
+</html>

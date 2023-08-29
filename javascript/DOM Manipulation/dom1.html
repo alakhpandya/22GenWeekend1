@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 1</title>
+    <link rel="stylesheet" href="dom1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="containar">
+
+        <h1 id="heading">Favourite Movie Franchise</h1>
+
+        <button class="btn" id="btn-1">The Matrix</button>
+        <button class="btn">Star Wars</button>
+        <button class="btn">Harry Potter</button>
+        <button class="btn">Load of the Rings</button>
+        <button class="btn">Marvel</button>
+
+    </div>
+</body>
+<script>
+    // 5 ways to select elements
+    // Selecting by id:
+    let first_movie = document.getElementById('btn-1');
+    // console.log(first_movie);
+    first_movie.style.color = "Blue";
+
+    // Selecting by class:
+    let all_movies = document.getElementsByClassName('btn');
+    // console.log(all_movies);
+    all_movies[1].style.color = "Red";
+
+    // Selecting by tag:
+    all_movies = document.getElementsByTagName('button');
+    all_movies[2].style.backgroundColor = "Violet";
+
+    // Query Selection: returns the first element matching the query
+    first_movie = document.querySelector('button')  // by tag name
+    first_movie = document.querySelector('#btn-1')  // by id
+    first_movie = document.querySelector('.btn')    // by class name
+    first_movie.style.backgroundColor = "Maroon";
+
+    // Query Selector All:
+    all_movies = document.querySelectorAll('button');
+    all_movies = document.querySelectorAll('.btn');
+    all_movies = document.querySelectorAll('#btn-1');
+    // console.log(all_movies);
+    all_movies[0].style.backgroundColor = "Aqua";
+</script>
+</html>

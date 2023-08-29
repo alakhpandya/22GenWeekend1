@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    async function function_name(){
+        try{
+            await task()
+        }
+        catch(error){
+
+        }
+        finally{
+
+        }
+    }
+    */
+
+    let task = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(console.log("Guests are done with their food."));
+            }, 7000)
+        })
+    }
+
+    async function kitchen(){
+        console.log("Take the order.");
+        console.log("Cook the food.");
+        console.log("Serve.");
+        await task();
+        console.log("Give the bill.");
+        console.log("Clean up the things.");
+    }
+
+    kitchen();
+    console.log("Close the shutter to the half.");
+    console.log("Clean up other tables.");
+    console.log("Do the accountings.");
+</script>
+</html>

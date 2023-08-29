@@ -20,8 +20,8 @@
     7. Serve the order                      1
     */
     
-    // let is_open = true;
-    let is_open = false;
+    let is_open = true;
+    // let is_open = false;
 
     let order = (time, task) => {
         return new Promise((resolve, reject) => {
@@ -33,7 +33,7 @@
             }
             else{
                 // reject
-                reject(console.log("Sorry, the shop is closed."));
+                reject("Sorry, the shop is closed.");
             }
         })
     }
@@ -65,5 +65,12 @@
         return order(1000, () => console.log("Here's your maggie sanwich!"));
     })
 
+    .catch((e) => {
+        // console.log("Customer left the shop");
+        console.log(e);
+    })
+    .finally(() => {
+        console.log("Day ended, let's calculate the profit!");
+    })
 </script>
 </html>
