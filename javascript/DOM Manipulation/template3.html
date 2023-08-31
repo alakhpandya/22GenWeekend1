@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 100vh;
+            background: linear-gradient(#020024,#404076);
+            color: white;
+            text-align: center;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .main-container{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 30px 0;
+        }
+        .left-container{
+            min-width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .hide{
+            display: none;
+        }
+        .right-container{
+            width: 850px;
+        }
+        .left-container, .right-container{
+            border: 3px solid;
+            border-radius: 20px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Listeners</h1>
+    <div class="main-container">
+        <div id="show-hide-btn" class="left-container">
+            <a href="#">Hide</a>
+        </div>
+        <div class="right-container">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit dignissimos obcaecati, atque itaque, commodi magni magnam facere asperiores rerum facilis aliquam. Temporibus neque voluptatum, accusamus sit repudiandae quisquam itaque numquam quas odit rem suscipit harum cupiditate culpa dolorem exercitationem obcaecati mollitia ut odio. Maxime, sunt minima! Officia numquam placeat exercitationem.</p>
+        </div>
+    </div>
+</body>
+<script>
+    let showHide = document.getElementById('show-hide-btn');
+    let right = document.querySelector('.right-container');
+
+    showHide.addEventListener('click', () => {
+
+        // right.classList.toggle('hide');
+
+        
+        if (right.classList.contains('hide')){
+            right.classList.remove('hide');
+            showHide.innerText = 'Hide';
+        }
+        else{
+            right.classList.add('hide');
+            showHide.innerText = 'Show';
+        }
+        
+    })
+
+</script>
+</html>

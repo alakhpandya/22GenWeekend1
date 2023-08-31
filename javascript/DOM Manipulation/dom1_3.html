@@ -29,19 +29,40 @@
 </body>
 <script>
     // Traversing through DOM
+    // Traversing through parents:
     let yt = document.getElementsByClassName('fa-youtube')[0];
-    console.log(yt);
+    // console.log(yt);
 
     // console.log(yt.parentElement)
     // console.log(yt.parentNode)
     const social = yt.parentNode.parentElement;
 
+    // Traversing through children:
     // console.log(social.childElementCount);
     // console.log(social.children);
     // console.log(social.childNodes);
     // console.log(social);
 
     // console.log(social.parentElement.parentElement.parentElement);
-    console.log(social.parentNode.parentNode.parentNode);
+    // console.log(social.parentNode.parentNode.parentNode);
+
+    /*
+    console.log(social.firstChild);
+    console.log(social.firstElementChild);
+    console.log(social.lastChild);
+    console.log(social.lastElementChild);
+    const twitter = social.lastElementChild;
+    twitter.style.backgroundColor = 'red';
+    */
+
+    // Traversing through siblings:
+    const matrix = document.getElementById('btn-1');
+    // console.log(matrix.nextSibling);
+    // console.log(matrix.nextElementSibling);
+    console.log(yt.nextSibling);
+    console.log(yt.nextElementSibling);
+
+    console.log(matrix.previousSibling);
+    console.log(matrix.previousElementSibling);
 </script>
 </html>

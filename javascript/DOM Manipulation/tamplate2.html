@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* --------------Variables-------------- */
+        :root {
+            --bg_gardiant: linear-gradient(#0b1b35, #173b75);
+            --font_color: white;
+        }
+
+        /* --------------CSS Reset-------------- */
+        *,
+        ::before,
+        ::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* --------------Global Styling-------------- */
+        body {
+            height: 100vh;
+            background: var(--bg_gardiant);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            color: var(--font_color);
+            flex-direction: column;
+        }
+        /* --------------Container Styling-------------- */
+        .container {
+            border: solid 2px var(--font_color);
+            border-radius: 10px;
+            margin: 1rem;
+            padding: 1rem;
+            display: flex;
+        }
+        
+        /* --------------inner_container Styling-------------- */
+
+        .inner_container {
+            border: solid 2px var(--font_color);
+            border-radius: 10px;
+            margin: 5rem 1rem;
+            padding: 1rem 0.3rem;
+            text-align: center;
+        }
+
+
+        .enter_link{
+            text-decoration: none;
+            color: var(--font_color);
+            border: solid 2px var(--font_color);
+            border-radius: 10px;
+            margin: 1rem;
+            padding: 0.3rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Event Listeners</h1>
+    <br><br><br>
+    <div class="container">
+        <div class="inner_container" onmouseenter="makeYellow(innerContainers[0])">
+            Example 1
+            <br><br><br><br>
+            <!-- inline js event listener -->
+            <a href="#" class="enter_link" onclick="window.alert('I love javascript!')" >Enter</a>
+        </div>
+        <div class="inner_container">
+            Example 2
+            <br><br><br><br>
+            <a href="#" class="enter_link">Enter</a>
+        </div>
+        <div class="inner_container">
+            Example 3
+            <br><br><br><br>
+            <a href="#" class="enter_link">Enter</a>
+        </div>
+    </div>
+
+</body>
+<script>
+    const innerContainers = document.querySelectorAll('.inner_container');
+    const enterBtns = document.querySelectorAll('.enter_link');
+    const makeYellow = (ele) => {
+        ele.style.backgroundColor = 'yellow';
+    }
+
+    const btn2 = enterBtns[1];
+    const popup = () => {
+        alert('You love javascript!');
+    }
+    // Syntax:
+    // btn2.addEventListener('event-name', function)
+    btn2.addEventListener('click', popup);
+
+    const btn3 = enterBtns[2];
+    btn3.addEventListener('click', () => {
+        alert('We love javascript!');
+    })
+
+    innerContainers[0].addEventListener('mouseout', () => {
+        innerContainers[0].style.backgroundColor = 'transparent';
+    })
+</script>
+</html>
