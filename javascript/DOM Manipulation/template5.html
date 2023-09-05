@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-5</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    main {
+        min-height: 100vh;
+        max-width: 100vw;
+        background: linear-gradient(68.8deg, rgba(0, 0, 0, 0.95) 1.8%, rgb(0, 55, 79) 31.8%, rgb(9, 93, 134) 56.2%, rgb(15, 155, 217) 89%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .container {
+        border: 2px solid white;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .box{
+        border: 2px solid white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 5px 20px;
+        margin: 10px 0px;
+        transition: .2s ease-in-out;
+    }
+
+    .box:hover{
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="box">                
+                Football
+            </div>
+            <div class="box">                
+                Basketball
+            </div>
+            <div class="box">                
+                Boxing
+            </div>
+            <div class="box">                
+                Tennis
+            </div>
+            <div class="box">                
+                Golf
+            </div>
+            <div class="box">                
+                Rugby
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    // const boxes = document.getElementsByClassName('box');
+    const container = document.querySelector('.container');
+    container.addEventListener('click', (e) => {
+        // console.log(e.target);
+        if (e.target.classList.contains('container')){
+            e.target.style.backgroundColor = 'yellow';
+        }
+        else{
+            e.target.style.backgroundColor = 'green';
+        }
+    })
+</script>
+</html>

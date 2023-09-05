@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            margin: 12% auto 0;
+            background-color: black;
+            height: 2.5rem;
+            width: 17rem;
+            font-weight: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            border: 2px white solid;
+            border-radius: 0.5rem;
+            color: white;
+
+        }
+
+        .box1 {
+            background-color: rgb(250, 248, 248,0.9);
+            color: rgba(87, 83, 83,0.9);
+            margin: 2rem auto 0;
+            display: flex;
+            width: 1000px;
+            height: 230px;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight:400;
+            position: relative;
+        }
+        .quote{
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .author{
+            position: absolute;
+            margin-top: 7%;
+            left: 50%;
+            transform: translateX(-50%);
+            letter-spacing: 0.3rem;
+            color: rgb(184, 64, 64);
+            font-weight: 550;
+            font-size: larger;
+        }
+
+        .new-quote-btn{
+            margin-top: 13%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+            color: white;
+            width: 120px;
+            height: 30px;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        body {
+            background-image: url(/library.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+        }
+
+        .container {
+            background-color: rgba(23, 23, 17, 0.308);
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">JavaScript Quote Generator</h2>
+        <div class="box1">
+            <p class="quote">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus obcaecati possimus rerum sed iure non dolorum nobis ."</p>
+            <div class="author">AUTHOR NAME</div>
+            <div class="new-quote-btn">New Quote</div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
