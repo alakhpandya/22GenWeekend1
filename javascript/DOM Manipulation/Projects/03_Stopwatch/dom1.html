@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* ----------------CSS Reset------------------- */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            background: url(/images/water_timer.jpg) no-repeat;
+            background-size: cover; 
+        } */
+        body{
+            /* background-color: black; */
+            background-color: rgb(75, 75, 237);
+            /* min-height: 100vh; */
+        }
+        body::before{
+            content: "";
+            background: url(/images/water_timer.jpg) center/100vw 100vh;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.9;
+        }   
+        .container{
+            background-color: rgba(255, 255, 255, 0.799);
+            height: 180px;
+            width: 500px;
+            border-radius: 10px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            box-shadow: 0 0 50px 5px black;
+        }
+        .timer-container{
+            
+            /* background-color: white; */
+            border-radius: 10px;
+            font-size: 1.5rem;
+            margin: 10px auto 20px; 
+            transition: 0.5s;
+        }
+        .timer-container:hover{
+            background-color: rgba(255, 255, 255, 0.824);
+            box-shadow: 0 0 50px 5px grey;
+        }
+        .stopwatch-controls{
+            font-size: 1.5rem;
+        }
+        
+        .play, .reset{
+            margin: 0 2px;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .play{
+            padding-left: 8px;
+            /* background-color: rgb(25, 199, 25); */
+            background-color: #78b40f;
+            transition: 0.3s;
+        }
+        .play:hover{
+            /* border: 3px solid rgb(25, 199, 25); */
+            border: 3px solid #78b40f;
+            border-radius: 30px;
+            /* color: rgb(25, 199, 25); */
+            color: #78b40f;
+            background-color: rgb(182, 217, 182);
+        }
+        .reset{
+            background-color: #E00543;
+            transition: 0.3s;
+        }
+        .reset:hover{
+            border: 3px solid #E00543;
+            border-radius: 30px;
+            color: #E00543;
+            background-color: #deb3bf;
+        }
+        .timer{
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+        .time{
+            width: 4rem;
+            /* border: red solid; */
+        }
+        .ms-box{
+            width: 6rem;
+            /* border: red solid; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <div class="timer">
+                <p class="time hr-box">00</p>
+                <p class="seperator">:</p>
+                <p class="time min-box">00</p>
+                <p class="seperator">:</p>
+                <p class="time s-box">00</p>
+                <p class="seperator">:</p>
+                <p class="ms-box">000</p>
+            </div>
+        </div>
+        <div class="operations">
+            <i class="fa-solid fa-play stopwatch-controls play"></i>
+            <i class="fa-solid fa-rotate-left stopwatch-controls reset"></i>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html> 
