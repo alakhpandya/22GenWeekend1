@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Registration</title>
+    <!-- ---------css----------->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="" name="regForm" class="registration">
+            <p class="form-title">Registration</p>
+            <div class="main-box">
+                <div class="box-right">
+                    <div class="input-box">
+                        <input name="fName" type="text">
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <span id="fNameErr"></span>
+                    <div class="input-box">
+                        <input name="lName" type="text">
+                        <label for="">Last Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input name="contact" type="text">
+                        <label for="">Contact No</label>
+                    </div>
+                </div>
+                <div class="box-left">
+                    <div class="gender-box">
+                        <p>Gender:</p>
+                        <div class="down">
+                            <div>
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="other">
+                                <label for="male">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="box-right">
+                    <div class="input-box">
+                        <input name="email" type="text">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input name="pwd" type="text">
+                        <label for="">Password</label>
+                        <!-- <div class="sign"> -->
+                            <i class="fa-solid fa-eye eye"></i>
+                        <!-- </div> -->
+                    </div>
+                    <div class="input-box">
+                        <input name="cpwd" type="text">
+                        <label for="">Confirm Password</label>
+                        <i class="fa-solid fa-eye eye"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="url">
+                        <label for="">URL</label>
+                    </div>
+                </div>
+                <div class="box-left">
+                    <div class="hobbies-box">
+                        <p>Hobbies:</p>
+                        <input type="checkbox" name="hobby" id="music">
+                        <label for="">Music</label>
+                        <input type="checkbox" name="hobby" id="music">
+                        <label for="">Drawing</label>
+                        <input type="checkbox" name="hobby" id="music">
+                        <label for="">Dance</label>
+                    </div>
+                    <div class="country-box">
+                        <p>Country:</p>
+                        <select name="country" id="">
+                            <option selected value="0">-- Country --</option>
+                            <option value="IN">India</option>
+                            <option value="USA" >USA</option>
+                            <option value="RUS">Russia</option>
+                            <option value="CHI">China</option>
+                            <option value="SKR">South Korea</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-reset">
+                <button onclick="validate()" type="button">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="/js/main.js"></script>
+</html>
